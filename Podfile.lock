@@ -1,0 +1,16 @@
+PODS:
+  - Branch (0.11.11)
+  - Firebase (2.4.3)
+  - Tune (4.0.3)
+
+DEPENDENCIES:
+  - Branch
+  - Firebase (>= 2.4.3)
+  - Tune
+
+SPEC CHECKSUMS:
+  Branch: 71b1180c49d75e0d849e2611ecf3016de7572eac
+  Firebase: 48179995b561e2262c5d4060ecdffca45fbbff8b
+  Tune: 99d0dd09742a6f76376c0e302426f13a51ce92b5
+
+COCOAPODS: 0.39.0

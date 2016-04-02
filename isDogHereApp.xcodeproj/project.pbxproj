@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27ADF3F31C1A0F3F009A952F /* TuneConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27ADF3F21C1A0F3F009A952F /* TuneConfiguration.plist */; };
+		4D0B1C6D1C10217F00C581DE /* Pods_isDogHereApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0B1C6C1C10217F00C581DE /* Pods_isDogHereApp.framework */; };
+		4D4777F41C0D71890025B932 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4777F31C0D71890025B932 /* Dog.swift */; };
+		4D4777F61C0D98060025B932 /* DogDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4777F51C0D98060025B932 /* DogDetailsViewController.swift */; };
+		4DABCE601C0984C100D19AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DABCE5F1C0984C100D19AE1 /* AppDelegate.swift */; };
+		4DABCE621C0984C100D19AE1 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DABCE611C0984C100D19AE1 /* DogViewController.swift */; };
+		4DABCE651C0984C100D19AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DABCE631C0984C100D19AE1 /* Main.storyboard */; };
+		4DABCE671C0984C100D19AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DABCE661C0984C100D19AE1 /* Assets.xcassets */; };
+		4DABCE6A1C0984C100D19AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DABCE681C0984C100D19AE1 /* LaunchScreen.storyboard */; };
+		4DABCE751C0984C100D19AE1 /* isDogHereAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DABCE741C0984C100D19AE1 /* isDogHereAppUITests.swift */; };
+		4DECF76B1C0E124C009D40AE /* DogTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DECF76A1C0E124C009D40AE /* DogTableCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DABCE711C0984C100D19AE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DABCE541C0984C100D19AE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DABCE5B1C0984C100D19AE1;
+			remoteInfo = isDogHereApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B3048CFC1EAA276BFF3C86A /* Pods_isDogHereApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isDogHereApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27ADF3F21C1A0F3F009A952F /* TuneConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TuneConfiguration.plist; sourceTree = "<group>"; };
+		3F722E53E7DB79AA0D04544A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4520AF7B5720AFF474E0F2E0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0B1C6C1C10217F00C581DE /* Pods_isDogHereApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_isDogHereApp.framework; path = "Pods/../build/Debug-iphoneos/Pods_isDogHereApp.framework"; sourceTree = "<group>"; };
+		4D4777F31C0D71890025B932 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		4D4777F51C0D98060025B932 /* DogDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDetailsViewController.swift; sourceTree = "<group>"; };
+		4DABCE5C1C0984C100D19AE1 /* Tune Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tune Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DABCE5F1C0984C100D19AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DABCE611C0984C100D19AE1 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		4DABCE641C0984C100D19AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DABCE661C0984C100D19AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DABCE691C0984C100D19AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DABCE6B1C0984C100D19AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DABCE701C0984C100D19AE1 /* isDogHereAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = isDogHereAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DABCE741C0984C100D19AE1 /* isDogHereAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isDogHereAppUITests.swift; sourceTree = "<group>"; };
+		4DABCE761C0984C100D19AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DECF76A1C0E124C009D40AE /* DogTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogTableCell.swift; sourceTree = "<group>"; };
+		722EE136488D09958967419C /* Pods-isDogHereApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isDogHereApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.debug.xcconfig"; sourceTree = "<group>"; };
+		78D21392AF0C1C0F9FD77EDE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E00A1129774752EF1C9951C7 /* Pods-isDogHereApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isDogHereApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DABCE591C0984C100D19AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B1C6D1C10217F00C581DE /* Pods_isDogHereApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DABCE6D1C0984C100D19AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DABCE531C0984C100D19AE1 = {
+			isa = PBXGroup;
+			children = (
+				4DABCE5E1C0984C100D19AE1 /* isDogHereApp */,
+				4DABCE731C0984C100D19AE1 /* isDogHereAppUITests */,
+				4DABCE5D1C0984C100D19AE1 /* Products */,
+				FC0CDB9CEBE4514F37B9162D /* Pods */,
+				B73F23CD77E412459855B384 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DABCE5D1C0984C100D19AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DABCE5C1C0984C100D19AE1 /* Tune Dog.app */,
+				4DABCE701C0984C100D19AE1 /* isDogHereAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DABCE5E1C0984C100D19AE1 /* isDogHereApp */ = {
+			isa = PBXGroup;
+			children = (
+				4DABCE5F1C0984C100D19AE1 /* AppDelegate.swift */,
+				4DABCE611C0984C100D19AE1 /* DogViewController.swift */,
+				4D4777F51C0D98060025B932 /* DogDetailsViewController.swift */,
+				4DECF76A1C0E124C009D40AE /* DogTableCell.swift */,
+				4D4777F31C0D71890025B932 /* Dog.swift */,
+				4DABCE631C0984C100D19AE1 /* Main.storyboard */,
+				4DABCE661C0984C100D19AE1 /* Assets.xcassets */,
+				4DABCE681C0984C100D19AE1 /* LaunchScreen.storyboard */,
+				27ADF3F21C1A0F3F009A952F /* TuneConfiguration.plist */,
+				4DABCE6B1C0984C100D19AE1 /* Info.plist */,
+			);
+			path = isDogHereApp;
+			sourceTree = "<group>";
+		};
+		4DABCE731C0984C100D19AE1 /* isDogHereAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DABCE741C0984C100D19AE1 /* isDogHereAppUITests.swift */,
+				4DABCE761C0984C100D19AE1 /* Info.plist */,
+			);
+			path = isDogHereAppUITests;
+			sourceTree = "<group>";
+		};
+		B73F23CD77E412459855B384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B1C6C1C10217F00C581DE /* Pods_isDogHereApp.framework */,
+				4520AF7B5720AFF474E0F2E0 /* Pods.framework */,
+				0B3048CFC1EAA276BFF3C86A /* Pods_isDogHereApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC0CDB9CEBE4514F37B9162D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78D21392AF0C1C0F9FD77EDE /* Pods.debug.xcconfig */,
+				3F722E53E7DB79AA0D04544A /* Pods.release.xcconfig */,
+				722EE136488D09958967419C /* Pods-isDogHereApp.debug.xcconfig */,
+				E00A1129774752EF1C9951C7 /* Pods-isDogHereApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DABCE5B1C0984C100D19AE1 /* isDogHereApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DABCE791C0984C100D19AE1 /* Build configuration list for PBXNativeTarget "isDogHereApp" */;
+			buildPhases = (
+				B45E559EB767DE89E8FABDC2 /* Check Pods Manifest.lock */,
+				4DABCE581C0984C100D19AE1 /* Sources */,
+				4DABCE591C0984C100D19AE1 /* Frameworks */,
+				4DABCE5A1C0984C100D19AE1 /* Resources */,
+				1AEE0358E584487AACC8913F /* Embed Pods Frameworks */,
+				56D558AB357B987600E4612E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = isDogHereApp;
+			productName = isDogHereApp;
+			productReference = 4DABCE5C1C0984C100D19AE1 /* Tune Dog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DABCE6F1C0984C100D19AE1 /* isDogHereAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DABCE7C1C0984C100D19AE1 /* Build configuration list for PBXNativeTarget "isDogHereAppUITests" */;
+			buildPhases = (
+				4DABCE6C1C0984C100D19AE1 /* Sources */,
+				4DABCE6D1C0984C100D19AE1 /* Frameworks */,
+				4DABCE6E1C0984C100D19AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DABCE721C0984C100D19AE1 /* PBXTargetDependency */,
+			);
+			name = isDogHereAppUITests;
+			productName = isDogHereAppUITests;
+			productReference = 4DABCE701C0984C100D19AE1 /* isDogHereAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DABCE541C0984C100D19AE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sina Yeganeh";
+				TargetAttributes = {
+					4DABCE5B1C0984C100D19AE1 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 6C6LAHKF8X;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					4DABCE6F1C0984C100D19AE1 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4DABCE5B1C0984C100D19AE1;
+					};
+				};
+			};
+			buildConfigurationList = 4DABCE571C0984C100D19AE1 /* Build configuration list for PBXProject "isDogHereApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DABCE531C0984C100D19AE1;
+			productRefGroup = 4DABCE5D1C0984C100D19AE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DABCE5B1C0984C100D19AE1 /* isDogHereApp */,
+				4DABCE6F1C0984C100D19AE1 /* isDogHereAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DABCE5A1C0984C100D19AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DABCE6A1C0984C100D19AE1 /* LaunchScreen.storyboard in Resources */,
+				27ADF3F31C1A0F3F009A952F /* TuneConfiguration.plist in Resources */,
+				4DABCE671C0984C100D19AE1 /* Assets.xcassets in Resources */,
+				4DABCE651C0984C100D19AE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DABCE6E1C0984C100D19AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AEE0358E584487AACC8913F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56D558AB357B987600E4612E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45E559EB767DE89E8FABDC2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DABCE581C0984C100D19AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DECF76B1C0E124C009D40AE /* DogTableCell.swift in Sources */,
+				4D4777F61C0D98060025B932 /* DogDetailsViewController.swift in Sources */,
+				4DABCE621C0984C100D19AE1 /* DogViewController.swift in Sources */,
+				4DABCE601C0984C100D19AE1 /* AppDelegate.swift in Sources */,
+				4D4777F41C0D71890025B932 /* Dog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DABCE6C1C0984C100D19AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DABCE751C0984C100D19AE1 /* isDogHereAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DABCE721C0984C100D19AE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DABCE5B1C0984C100D19AE1 /* isDogHereApp */;
+			targetProxy = 4DABCE711C0984C100D19AE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DABCE631C0984C100D19AE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DABCE641C0984C100D19AE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DABCE681C0984C100D19AE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DABCE691C0984C100D19AE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DABCE771C0984C100D19AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DABCE781C0984C100D19AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DABCE7A1C0984C100D19AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722EE136488D09958967419C /* Pods-isDogHereApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = isDogHereApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
+				PRODUCT_NAME = "Tune Dog";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4DABCE7B1C0984C100D19AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00A1129774752EF1C9951C7 /* Pods-isDogHereApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = isDogHereApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
+				PRODUCT_NAME = "Tune Dog";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		4DABCE7D1C0984C100D19AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = isDogHereAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.isDogHereAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = isDogHereApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4DABCE7E1C0984C100D19AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = isDogHereAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.isDogHereAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = isDogHereApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DABCE571C0984C100D19AE1 /* Build configuration list for PBXProject "isDogHereApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DABCE771C0984C100D19AE1 /* Debug */,
+				4DABCE781C0984C100D19AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DABCE791C0984C100D19AE1 /* Build configuration list for PBXNativeTarget "isDogHereApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DABCE7A1C0984C100D19AE1 /* Debug */,
+				4DABCE7B1C0984C100D19AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DABCE7C1C0984C100D19AE1 /* Build configuration list for PBXNativeTarget "isDogHereAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DABCE7D1C0984C100D19AE1 /* Debug */,
+				4DABCE7E1C0984C100D19AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DABCE541C0984C100D19AE1 /* Project object */;
+}
