@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Branch
 import Tune
 import AdSupport
 
@@ -20,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let branch = Branch.getInstance()
-        
         // MARK - Push Notifications
         let settings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
@@ -30,14 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MARK: Tune Init Code
         Tune.initializeWithTuneAdvertiserId("190479", tuneConversionKey: "0f85edd57ece8c5e51d14e5f630ee607")
         Tune.automateIapEventMeasurement(true)
-        
-        branch.initSessionWithLaunchOptions(launchOptions, andRegisterDeepLinkHandler: { params, error in
-            if (error == nil) {
-                // params are the deep linked params associated with the link that the user clicked -> was re-directed to this app
-                // params will be empty if no data found
-                // ... insert custom logic here ...
-            }
-        })
         
         return true
     }
@@ -53,9 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         // pass the url to the handle deep link call
         // if handleDeepLink returns true, and you registered a callback in initSessionAndRegisterDeepLinkHandler, the callback will be called with the data associated with the deep link
-        if (!Branch.getInstance().handleDeepLink(url)) {
-            // do other deep link routing for the Facebook SDK, Pinterest SDK, etc
-        }
         
         Tune.applicationDidOpenURL(url.absoluteString, sourceApplication: sourceApplication)
         

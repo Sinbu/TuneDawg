@@ -10,19 +10,20 @@ import UIKit
 import Firebase
 
 class DogViewController: UITableViewController {
+    var ref: Firebase!
+    var handleForData: UInt!
     var items = [Dog]()
-    let ref = Firebase(url: "https://tunedog.firebaseio.com/Dogs")
 
+    
+    // MARK: View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // tableView.allowsMultipleSelectionDuringEditing = false
-        // cellImage.layer.cornerRadius = cellImage.frame.size.width/2;
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        ref.observeEventType(.Value, withBlock: { snapshot in
+        ref = Firebase(url: "https://tunedog.firebaseio.com/Dogs")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        handleForData = ref.observeEventType(.Value, withBlock: { snapshot in
             var newItems = [Dog]()
-            
             
             for item in snapshot.children {
                 let dogItem = Dog(snapshot: item as! FDataSnapshot)
@@ -35,8 +36,19 @@ class DogViewController: UITableViewController {
             }, withCancelBlock: { error in
                 print(error.description)
         })
-        
     }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        ref.removeObserverWithHandle(handleForData)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: Table View
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -152,6 +164,8 @@ class DogViewController: UITableViewController {
         // Do stuff
         print(editingStyle)
     }
+    
+    // MARK: Segue
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -164,12 +178,9 @@ class DogViewController: UITableViewController {
         }
         
     }
-    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
 
 
 }
