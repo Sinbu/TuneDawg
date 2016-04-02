@@ -5,9 +5,8 @@ use_frameworks!
 
 
 target 'isDogHereApp' do
-	pod 'Firebase', '>= 2.4.3'
-	pod "Branch"
-    pod "Tune"
+	pod 'Firebase', '>= 2.5.1'
+  pod 'Tune'
 end
 
 target 'isDogHereAppUITests' do

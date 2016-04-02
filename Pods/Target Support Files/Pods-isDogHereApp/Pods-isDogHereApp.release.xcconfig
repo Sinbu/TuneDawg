@@ -2,7 +2,7 @@ FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Tune"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Tune"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Branch.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Firebase.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Tune"
-OTHER_LDFLAGS = $(inherited) -ObjC -ObjC, -l"z" -framework "AdSupport" -framework "Branch" -framework "CoreTelephony" -framework "Firebase" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "Tune" -framework "UIKit" -framework "iAd"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Firebase.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Tune"
+OTHER_LDFLAGS = $(inherited) -ObjC -ObjC, -l"z" -framework "AdSupport" -framework "CoreTelephony" -framework "Firebase" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "Tune" -framework "UIKit" -framework "iAd"
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-isDogHereApp
 PODS_ROOT = ${SRCROOT}/Pods

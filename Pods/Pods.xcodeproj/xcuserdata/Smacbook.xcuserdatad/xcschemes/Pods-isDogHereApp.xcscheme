@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '189B902A6F79B256E48B1926'
+               BlueprintIdentifier = '48BE69C51AC9FCEB969E6C08'
                BlueprintName = 'Pods-isDogHereApp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_isDogHereApp.framework'>

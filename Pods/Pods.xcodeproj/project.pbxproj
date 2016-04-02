@@ -1,1069 +1,1563 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B6D862AB19CFA8FDB4A9B67FADA554 /* Empty.m */; };
-		034D6A1D347B1DA340332AE03912E165 /* BranchLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DFA68E8A17BF258A82C5326A53A50F /* BranchLogoutRequest.m */; };
-		04499BF78ADBD3412A703D40F2B06251 /* Pods-isDogHereApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 983B0BC3177A180B77C0C88329706A1A /* Pods-isDogHereApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		056E0741CE61B9BBF86B2564508F687E /* BranchShortUrlSyncRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF3461331C31223F4FB5FA5C12F0F56 /* BranchShortUrlSyncRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		057F086A4BA7D095C8B6EA8A2CFD1BCC /* BranchRegisterViewRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A199977D18075AF61165D3639BF644 /* BranchRegisterViewRequest.m */; };
-		05EEF9DAE1647E2813897D10D68D8E0D /* BranchShortUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B97A79F399678139DB80F9BF05FC115 /* BranchShortUrlRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B18AFF21E0C4F5B4C6D0517097CA45D /* BranchConnectDebugRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C86FCEB3A38B80125A60C04D8B45AD /* BranchConnectDebugRequest.m */; };
-		0E7F27F9C4E76816D6DDDC470591F753 /* BranchLinkProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B00C821719E5C61A065DDFA90054EA /* BranchLinkProperties.m */; };
-		0F95DB4FB5EAD6B0452FD69EFD83468A /* BNCServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F988971D97FF68DEE78CE0F74E977EC /* BNCServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		186E5019720FF3D050A3043310207A60 /* BranchLoadRewardsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 920B59B96F4AAB809456A0544659F696 /* BranchLoadRewardsRequest.m */; };
-		191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D943BFF78D7B7ED07CE73724B824B2B /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1932412131C8BE0853392C23AD9CA7C2 /* BNCServerRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D63973E18C98BE4FADA65B9CA9114D85 /* BNCServerRequestQueue.m */; };
-		1A644280CE3219EF1E8394B9E04954F7 /* BNCStrongMatchHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8734C08F7862DCD1AC843F40521C5B8D /* BNCStrongMatchHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AFA137130ABF93A44C681541F3BFBFB /* BranchDisconnectDebugRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 83146EB057F4E033261B4C0541D35086 /* BranchDisconnectDebugRequest.m */; };
-		1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F6EED9396822F2E6883611D8577080 /* Security.framework */; };
-		1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B1283D246E81E58D6308907021B067 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D76C7A298AE75A2FF8F998A4EF2E0D /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA26D426DC771273C40B9EB26920EBF9 /* Firebase-dummy.m */; };
-		239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = D1494CD642517C42C62FEBE8015E2C96 /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D5AA01D837C595E5B9079AD8C6FC2FE /* BranchActivityItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EE1BDD5924FAFC7E4D489068FE72E1 /* BranchActivityItemProvider.m */; };
-		2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E226FD4A6E5075BEB65DD493876F3C /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31C57927393AE7BA5DEC71C699A0368A /* BranchRedeemRewardsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFDE4FB80023EBD312C973635A6C76F /* BranchRedeemRewardsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3325314A43863546DCDCC23CAA30252F /* BranchApplyPromoCodeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F7794561547878E118ACD8D5DCF651 /* BranchApplyPromoCodeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33824544ECEE9C16B3D59240DE253CD2 /* BranchLoadActionsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F580BBFF8B3A6E0DFA74F63C1F9BB68C /* BranchLoadActionsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36C0A846F782E1DF020E8E9DCE973F63 /* BranchCreditHistoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A24D8F5DC9DB77713A4DAAFCBECBA815 /* BranchCreditHistoryRequest.m */; };
-		37A441F017FE8375CFE1F92F3F93B951 /* BranchUniversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 69430D26B69278877DEF52B6E3F2B501 /* BranchUniversalObject.m */; };
-		39C3904CC7F5F878EC15EE1D31A0B5E0 /* BranchValidatePromoCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AE19F51183D8A725B84DE429D4AE0B /* BranchValidatePromoCodeRequest.m */; };
-		3B420B23D8D876E5EDFEF1ABF1DCE907 /* BNCEncodingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D5139DAED7C462D4EF1EFB8F5B8CFC73 /* BNCEncodingUtils.m */; };
-		4773412E78DC40760BA6331DF93790B1 /* BranchRedeemRewardsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBCDCA9DBB4E0066335B29A6157272 /* BranchRedeemRewardsRequest.m */; };
-		4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4264AD0BB97B8282B4867C69056E9441 /* Foundation.framework */; };
-		4CA6203A8F22CAB1ECE7DD8F8B9D28EB /* BNCError.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EA7F1594507E95741181194D8FB437 /* BNCError.m */; };
-		4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3836DCB33058255C03248645E808A2 /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5277A00E8456E4070D8174485C492B44 /* BranchUserCompletedActionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4143E5B82DAC1B33BD0AF8D80CD8B75C /* BranchUserCompletedActionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52D83DF458DD6F475B5BF6D9FB515222 /* BranchActivityItemProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6508F77B627A4195FD07D743031F37DE /* BranchActivityItemProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		532AA2F8CEDE746EDD338A54FB0A552A /* BNCServerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA29F4BC25EB0DC279A6A821641E982 /* BNCServerInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5496CDD5F4A8653281B4790A8EFE1655 /* BranchLoadActionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEDE2D5C90FBA694252B6C947749CC8 /* BranchLoadActionsRequest.m */; };
-		55F497A5D6305C63B2A12F8E7AC52382 /* BranchSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 089DA162FB2AD7C3AEFC77C51E4565F8 /* BranchSpotlightUrlRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		588DB180657362895DEB198FAB1BEF4B /* BranchApplyPromoCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E542811645C4F1B35389411FEA3238FE /* BranchApplyPromoCodeRequest.m */; };
-		5AC6494E6A48EC51C0FF6F5CCE62E682 /* BNCServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C774F830EDDF283834A74748139D82C /* BNCServerRequest.m */; };
-		5B07AB2E9BC2942F246C406A16F0D244 /* BNCPreferenceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBC2B7534E69A083C5619F894F7895F /* BNCPreferenceHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C9C2AEC39788509ADABEB21CD59AEA8 /* Branch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C4CDAB37A68590D08365BBDB83E6FD5 /* Branch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC36D5DCE581DF517BFB17B865810D5 /* Firebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		639F8D43A80C337D90A6918AED292B4F /* BNCContentDiscoveryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B8B3375922C00BA3D33B29F9F759C71B /* BNCContentDiscoveryManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63F9CBD3E279DCFAC2225F7B606A43C1 /* BranchLogoutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D903AC9EEAFC23B2CF2F816217387D92 /* BranchLogoutRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		656F32B46BD7419B89D58CC3E46D3CD6 /* BranchInstallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87598E8BE7DFF34A6985D46EF780B0 /* BranchInstallRequest.m */; };
-		65D3192BDA75EB0E9816BD989782D65D /* BNCServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E87E65BCF8A9D4C855B8D8A5B79E3C /* BNCServerInterface.m */; };
-		6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EDA12BCB86F71A070F3EF930CE2BA5 /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6658B7FA507085801BD56F800B12901B /* BranchConnectDebugRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F66163F3A5A5052B93A883F3E6876139 /* BranchConnectDebugRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		668A0781FAE18020D1D29760147569FC /* BranchLogRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A951A68C6FE3901ED628F8355F4F76E /* BranchLogRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A5CB9DF43BDD2713F2B51BE9A1E4526 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BF5299579F9852AD251090D8C7DC7A /* CoreTelephony.framework */; };
-		6DC600C68AC2FB5F6273AAD535264474 /* BranchLoadRewardsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 22627054CAF6A6F6C01744B9F6434CD0 /* BranchLoadRewardsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E2E8ACC2C96F9BD2DE508DA46B234E7 /* BranchDisconnectDebugRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 61BF182E24415B70402245B12CEE586A /* BranchDisconnectDebugRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		748E65D892792515942B30A936046F86 /* Branch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8383A3EA4C23AF4E33FBB7952911EF83 /* Branch-dummy.m */; };
-		75D7D943B0761D21184D2D8C5B7D34FD /* BNCSystemObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F325559E3777CA386E0FF9F67A8C082 /* BNCSystemObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76DA1A7AFCC3D2AF24CC9F37C3AFDE5E /* BNCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 33838A8517A98E36C95BC31C8E5F2A3E /* BNCError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AD0B6DFF141CB176C4176D73E132075 /* BNCServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D869962594FE91B39C859457E3D424 /* BNCServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B5152C5C137C163397545D0EA13040E /* BranchDeepLinkingController.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7913D0F3873AA12CFF7B74C3B3F0CF /* BranchDeepLinkingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DD9CC26C93F3078C96EE72542E6C90C /* Branch.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F30DE41442C375B049806B4E38029 /* Branch.m */; };
-		830D9EB98C657E28FD45645697B66A02 /* BranchSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5540FABBCECBBAD2D6B8BDBD35C7AA /* BranchSpotlightUrlRequest.m */; };
-		837432E001C639CAEB59C1B082C1059B /* BNCContentDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA331421487ACF74EC514CB5D122333A /* BNCContentDiscoveryManager.m */; };
-		88AFCA14F253A090410DD64D0C52845A /* BranchOpenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76843C9B67370E9705A7F397D875764A /* BranchOpenRequest.m */; };
-		89F5ED9C80DE247748C0F0CF9F63C61E /* BNCLinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6CFD8CE7A60DF129D8654A3042D184 /* BNCLinkData.m */; };
-		8DCACBE450AA5122BAE9E1B2D47705A7 /* BranchCSSearchableItemAttributeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 82316191780726CE922B33A1CF4FD6B0 /* BranchCSSearchableItemAttributeSet.m */; };
-		8DECB5D4787941125587C7BEE7F6A9BD /* BNCEncodingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F65EBC0FE2B2C43F113B0A5CFB936F /* BNCEncodingUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		941C3C0046AFDB59FDF277B73E1492D3 /* BranchLinkProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 489FF359ED4392C9A05536F132BAE43B /* BranchLinkProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95F2E69E47751FD4BA183EC8393499A8 /* BNCLinkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6896DFF13AF3D55753109A7CF67AD9 /* BNCLinkCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9776CF59D7B5669AF7DC2765E8403AA7 /* BranchShortUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B13E184460480141BE6AD41207963A21 /* BranchShortUrlRequest.m */; };
-		99FD8C991F16B0D03E00858713159D79 /* BranchLogRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB37E40C432CE9207A904B2E45100A /* BranchLogRequest.m */; };
-		9A26F2D89187D06122629A79F638325D /* BranchRegisterViewRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B44745A77D0ED1F15C55A10437029E /* BranchRegisterViewRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A79E27CED94495F2FB3E93BE72DDC91 /* BranchSetIdentityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 734EA8C03A54E2219810E6CDA78D34F1 /* BranchSetIdentityRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E9A48AC835A613EC3B96DFBEBB67F7B /* BranchGetPromoCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1EB76B8E1F49C132BDCE25B9B9CD0E /* BranchGetPromoCodeRequest.m */; };
-		A184B619A4C9165E64B4A3D4CDCC02C5 /* BranchCreditHistoryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8F16E004B73E7F190525733ADEA7A3 /* BranchCreditHistoryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1FFF7EB48ECC1F4780B98AA30C4C8B5 /* BranchConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F525E292508B916BD3A731B8BB52B7E /* BranchConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A901B85375D2383157079FBED8501A34 /* BNCServerRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B35A2109F560FC03655915A51CCCE8 /* BNCServerRequestQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC5386D74C788A27CBA09DC96C2347FB /* BranchOpenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F799530E85317087D5B31243A57A68 /* BranchOpenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD83A9F17A02B6B3258B1458560920C7 /* BranchCloseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8968CDD943EFDDBFF5609608C7E08F02 /* BranchCloseRequest.m */; };
-		AF3209B17EB62864F9641FA17572D9B6 /* BranchValidatePromoCodeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE40EBD30538DE449539F9524D02AF0 /* BranchValidatePromoCodeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0B23BEB9351FEE2A7D72A5163CBDCEC /* BranchConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB75A40C1402043A921235589A3F415 /* BranchConstants.m */; };
-		B0D9E919C51610672FB2CBF22FE23DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4264AD0BB97B8282B4867C69056E9441 /* Foundation.framework */; };
-		B5248431A90073001BD999927746A8DA /* BranchShortUrlSyncRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5FD7BD79D0281B22CE602178862D5 /* BranchShortUrlSyncRequest.m */; };
-		B5D759D0519388FF1EF2BBCD6F925C88 /* BranchGetPromoCodeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B29B2B5B5B8C6E02FBDFA976645F475 /* BranchGetPromoCodeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7E44CE979DBF2D9C384A65A97F41239 /* Pods-isDogHereApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E21CB2B1E5A4D7CCA7CB561C935AA /* Pods-isDogHereApp-dummy.m */; };
-		BA23D6A7B20A98C6B2C67CA56BD06517 /* BranchUniversalObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4197A3E7F97A795EE4750DC62AD57969 /* BranchUniversalObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB6C8C8DE5667ED05B599F950581AEA7 /* BNCLinkData.h in Headers */ = {isa = PBXBuildFile; fileRef = C1027082F9F09020692AE832BCBADF7C /* BNCLinkData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF859203B0A0F166330CD2FAA63C68CB /* BranchCloseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0FE2B092AA3ED47B7E12A9F87272C5 /* BranchCloseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = 070A0CA8E4CEE5D55A0053E40114B45D /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C383B13708A978399C1A93ABCB9384F7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC66ED42FBC9402959B92A0D88FC2357 /* MobileCoreServices.framework */; };
-		C3CBF4A8DC8418E35D95D92118F40D30 /* BNCDebugRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68723722BC886DEA2D199689D86C33D6 /* BNCDebugRequest.m */; };
-		C83741BE6E02A36BDED3A40E86AC3861 /* Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2371B358C183BB26AB7EF76B9A71F10F /* Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2F2EB75303CDE71DF49803047C39BB2 /* BNCPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AB302ED0A7BA62E55A06A19D696208 /* BNCPreferenceHelper.m */; };
-		D40C1C3EE910314BB4244066BB22C157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4264AD0BB97B8282B4867C69056E9441 /* Foundation.framework */; };
-		DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = B2171A62B9901F50CE5277ED5717D23C /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD99EF019E9E4FA9029FE7268EC98F67 /* BNCSystemObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1CE0240C1DC31D20F3B46617A5EA2F /* BNCSystemObserver.m */; };
-		DFA7200B7E3BDCCFFF5323144156B070 /* BNCConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 93194A631F8D25E8DB8895468987CEAD /* BNCConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFDF5ED63A32FC49001AC526A4414F3B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F24E3194B3FD53BB26D08B856669509 /* AdSupport.framework */; };
-		E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E82A4E4DF39D480DBF08CF22F5D990B /* SystemConfiguration.framework */; };
-		E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABDEBEC5A5AF26E1457697E8F909FD4 /* CFNetwork.framework */; };
-		E44F4E2476519C59DC50CCFC7DCEA1E2 /* BNCStrongMatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA6AEDE68B4949729C435A5CA746AF4 /* BNCStrongMatchHelper.m */; };
-		E5C49B3CCECE26E83D456F4EB5172AA5 /* BNCLinkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A56DB830D452D089AEFB6E3480F7321 /* BNCLinkCache.m */; };
-		E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 732AC67B8CE844918BA49014BC094FC4 /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7A8B8844A0F65981EC39BD2FAB90343 /* BranchInstallRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CB3F7EB74ACC2234BF5AC121C889177A /* BranchInstallRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1BEDC89FFEC36D0376FF332CFEEF8B /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9DB7E16743626C8064B64EC3E8F8D93 /* BNCServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD8AAB0A5D0B6C8CB04894AE1EBCE3 /* BNCServerResponse.m */; };
-		EA0F2FF74062BDF82E27A05E86E509CA /* BranchCSSearchableItemAttributeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 095687E87026CA6C644315DCCDF7D2C2 /* BranchCSSearchableItemAttributeSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F420A19DD3C1BE270EBCBA4D713C9B2F /* BranchUserCompletedActionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A82E399EDDE8EF8F9FF47B3354DE4A2 /* BranchUserCompletedActionRequest.m */; };
-		F77E034EA71E903857C7DF2678BEAB9D /* BranchSetIdentityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C7633B860EC6481F19DEC0690B811E91 /* BranchSetIdentityRequest.m */; };
-		F866E86AAAF5E91862482EE4EFCC91B1 /* BNCDebugRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AC2B98EA775BCFA5C54DF7BDB4C876 /* BNCDebugRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		74322D6F7F4C1790EF8E008A56252FF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B7AC9326D819482593FE118E915409D7;
-			remoteInfo = Firebase;
-		};
-		936B64D90CDF54B098E9945067DDBBC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 70D0A64A8618A200157DF626F00D26BD;
-			remoteInfo = Branch;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		06453315B8101F953FE76B4010A3D9D5 /* Pods-isDogHereApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-isDogHereApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		070A0CA8E4CEE5D55A0053E40114B45D /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
-		089DA162FB2AD7C3AEFC77C51E4565F8 /* BranchSpotlightUrlRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchSpotlightUrlRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchSpotlightUrlRequest.h"; sourceTree = "<group>"; };
-		095687E87026CA6C644315DCCDF7D2C2 /* BranchCSSearchableItemAttributeSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchCSSearchableItemAttributeSet.h; path = "Branch-SDK/Branch-SDK/BranchCSSearchableItemAttributeSet.h"; sourceTree = "<group>"; };
-		0A951A68C6FE3901ED628F8355F4F76E /* BranchLogRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchLogRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchLogRequest.h"; sourceTree = "<group>"; };
-		0B29B2B5B5B8C6E02FBDFA976645F475 /* BranchGetPromoCodeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchGetPromoCodeRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchGetPromoCodeRequest.h"; sourceTree = "<group>"; };
-		0F8F16E004B73E7F190525733ADEA7A3 /* BranchCreditHistoryRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchCreditHistoryRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchCreditHistoryRequest.h"; sourceTree = "<group>"; };
-		15DFA68E8A17BF258A82C5326A53A50F /* BranchLogoutRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchLogoutRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchLogoutRequest.m"; sourceTree = "<group>"; };
-		1F6896DFF13AF3D55753109A7CF67AD9 /* BNCLinkCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCLinkCache.h; path = "Branch-SDK/Branch-SDK/BNCLinkCache.h"; sourceTree = "<group>"; };
-		22627054CAF6A6F6C01744B9F6434CD0 /* BranchLoadRewardsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchLoadRewardsRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchLoadRewardsRequest.h"; sourceTree = "<group>"; };
-		2371B358C183BB26AB7EF76B9A71F10F /* Branch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Branch.h; path = "Branch-SDK/Branch-SDK/Branch.h"; sourceTree = "<group>"; };
-		242E21CB2B1E5A4D7CCA7CB561C935AA /* Pods-isDogHereApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-isDogHereApp-dummy.m"; sourceTree = "<group>"; };
-		27EDA12BCB86F71A070F3EF930CE2BA5 /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
-		2ADD8AAB0A5D0B6C8CB04894AE1EBCE3 /* BNCServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCServerResponse.m; path = "Branch-SDK/Branch-SDK/BNCServerResponse.m"; sourceTree = "<group>"; };
-		2F24E3194B3FD53BB26D08B856669509 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
-		2F525E292508B916BD3A731B8BB52B7E /* BranchConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchConstants.h; path = "Branch-SDK/Branch-SDK/BranchConstants.h"; sourceTree = "<group>"; };
-		33838A8517A98E36C95BC31C8E5F2A3E /* BNCError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCError.h; path = "Branch-SDK/Branch-SDK/BNCError.h"; sourceTree = "<group>"; };
-		33B35A2109F560FC03655915A51CCCE8 /* BNCServerRequestQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCServerRequestQueue.h; path = "Branch-SDK/Branch-SDK/BNCServerRequestQueue.h"; sourceTree = "<group>"; };
-		3BBC2B7534E69A083C5619F894F7895F /* BNCPreferenceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCPreferenceHelper.h; path = "Branch-SDK/Branch-SDK/BNCPreferenceHelper.h"; sourceTree = "<group>"; };
-		3C774F830EDDF283834A74748139D82C /* BNCServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCServerRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BNCServerRequest.m"; sourceTree = "<group>"; };
-		4143E5B82DAC1B33BD0AF8D80CD8B75C /* BranchUserCompletedActionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchUserCompletedActionRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchUserCompletedActionRequest.h"; sourceTree = "<group>"; };
-		4197A3E7F97A795EE4750DC62AD57969 /* BranchUniversalObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchUniversalObject.h; path = "Branch-SDK/Branch-SDK/BranchUniversalObject.h"; sourceTree = "<group>"; };
-		4264AD0BB97B8282B4867C69056E9441 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		489FF359ED4392C9A05536F132BAE43B /* BranchLinkProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchLinkProperties.h; path = "Branch-SDK/Branch-SDK/BranchLinkProperties.h"; sourceTree = "<group>"; };
-		4C3EBF9910C0D7EB46D3FC1EEB8203CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EDB37E40C432CE9207A904B2E45100A /* BranchLogRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchLogRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchLogRequest.m"; sourceTree = "<group>"; };
-		4F1CE0240C1DC31D20F3B46617A5EA2F /* BNCSystemObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCSystemObserver.m; path = "Branch-SDK/Branch-SDK/BNCSystemObserver.m"; sourceTree = "<group>"; };
-		4F988971D97FF68DEE78CE0F74E977EC /* BNCServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCServerRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BNCServerRequest.h"; sourceTree = "<group>"; };
-		51BF5299579F9852AD251090D8C7DC7A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		534D5EBEC835C6DD078C7386EF9710E4 /* Pods-isDogHereApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-isDogHereApp-frameworks.sh"; sourceTree = "<group>"; };
-		55AC2B98EA775BCFA5C54DF7BDB4C876 /* BNCDebugRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCDebugRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BNCDebugRequest.h"; sourceTree = "<group>"; };
-		570959D51CBFCC1DE26D032DA47D3825 /* Branch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Branch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0FE2B092AA3ED47B7E12A9F87272C5 /* BranchCloseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchCloseRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchCloseRequest.h"; sourceTree = "<group>"; };
-		5D943BFF78D7B7ED07CE73724B824B2B /* FTransactionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FTransactionResult.h; sourceTree = "<group>"; };
-		61BF182E24415B70402245B12CEE586A /* BranchDisconnectDebugRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchDisconnectDebugRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchDisconnectDebugRequest.h"; sourceTree = "<group>"; };
-		62AB302ED0A7BA62E55A06A19D696208 /* BNCPreferenceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCPreferenceHelper.m; path = "Branch-SDK/Branch-SDK/BNCPreferenceHelper.m"; sourceTree = "<group>"; };
-		62C64105005427684D535DEC4BF9A679 /* Branch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Branch.xcconfig; sourceTree = "<group>"; };
-		6508F77B627A4195FD07D743031F37DE /* BranchActivityItemProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchActivityItemProvider.h; path = "Branch-SDK/Branch-SDK/BranchActivityItemProvider.h"; sourceTree = "<group>"; };
-		68723722BC886DEA2D199689D86C33D6 /* BNCDebugRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCDebugRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BNCDebugRequest.m"; sourceTree = "<group>"; };
-		68F65EBC0FE2B2C43F113B0A5CFB936F /* BNCEncodingUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCEncodingUtils.h; path = "Branch-SDK/Branch-SDK/BNCEncodingUtils.h"; sourceTree = "<group>"; };
-		69430D26B69278877DEF52B6E3F2B501 /* BranchUniversalObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchUniversalObject.m; path = "Branch-SDK/Branch-SDK/BranchUniversalObject.m"; sourceTree = "<group>"; };
-		6A56DB830D452D089AEFB6E3480F7321 /* BNCLinkCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCLinkCache.m; path = "Branch-SDK/Branch-SDK/BNCLinkCache.m"; sourceTree = "<group>"; };
-		6ABDEBEC5A5AF26E1457697E8F909FD4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		6B3836DCB33058255C03248645E808A2 /* FQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FQuery.h; sourceTree = "<group>"; };
-		6B97A79F399678139DB80F9BF05FC115 /* BranchShortUrlRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchShortUrlRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchShortUrlRequest.h"; sourceTree = "<group>"; };
-		6C2736BD9C333237F56855056FE98478 /* Pods-isDogHereApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-isDogHereApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6C4CDAB37A68590D08365BBDB83E6FD5 /* Branch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Branch-umbrella.h"; sourceTree = "<group>"; };
-		6DFC7CB4E131195C9B94F99555913E68 /* Pods_isDogHereApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isDogHereApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		711F30DE41442C375B049806B4E38029 /* Branch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Branch.m; path = "Branch-SDK/Branch-SDK/Branch.m"; sourceTree = "<group>"; };
-		732AC67B8CE844918BA49014BC094FC4 /* FConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FConfig.h; sourceTree = "<group>"; };
-		734EA8C03A54E2219810E6CDA78D34F1 /* BranchSetIdentityRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchSetIdentityRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchSetIdentityRequest.h"; sourceTree = "<group>"; };
-		74F6EED9396822F2E6883611D8577080 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		76843C9B67370E9705A7F397D875764A /* BranchOpenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchOpenRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchOpenRequest.m"; sourceTree = "<group>"; };
-		7A82E399EDDE8EF8F9FF47B3354DE4A2 /* BranchUserCompletedActionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchUserCompletedActionRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchUserCompletedActionRequest.m"; sourceTree = "<group>"; };
-		7BF5FD7BD79D0281B22CE602178862D5 /* BranchShortUrlSyncRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchShortUrlSyncRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchShortUrlSyncRequest.m"; sourceTree = "<group>"; };
-		82316191780726CE922B33A1CF4FD6B0 /* BranchCSSearchableItemAttributeSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchCSSearchableItemAttributeSet.m; path = "Branch-SDK/Branch-SDK/BranchCSSearchableItemAttributeSet.m"; sourceTree = "<group>"; };
-		83146EB057F4E033261B4C0541D35086 /* BranchDisconnectDebugRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchDisconnectDebugRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchDisconnectDebugRequest.m"; sourceTree = "<group>"; };
-		8383A3EA4C23AF4E33FBB7952911EF83 /* Branch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Branch-dummy.m"; sourceTree = "<group>"; };
-		8734C08F7862DCD1AC843F40521C5B8D /* BNCStrongMatchHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCStrongMatchHelper.h; path = "Branch-SDK/Branch-SDK/BNCStrongMatchHelper.h"; sourceTree = "<group>"; };
-		896845691299761486660C1FD8EB35D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8968CDD943EFDDBFF5609608C7E08F02 /* BranchCloseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchCloseRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchCloseRequest.m"; sourceTree = "<group>"; };
-		8C1EB76B8E1F49C132BDCE25B9B9CD0E /* BranchGetPromoCodeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchGetPromoCodeRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchGetPromoCodeRequest.m"; sourceTree = "<group>"; };
-		920B59B96F4AAB809456A0544659F696 /* BranchLoadRewardsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchLoadRewardsRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchLoadRewardsRequest.m"; sourceTree = "<group>"; };
-		93194A631F8D25E8DB8895468987CEAD /* BNCConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCConfig.h; path = "Branch-SDK/Branch-SDK/BNCConfig.h"; sourceTree = "<group>"; };
-		983B0BC3177A180B77C0C88329706A1A /* Pods-isDogHereApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-isDogHereApp-umbrella.h"; sourceTree = "<group>"; };
-		9BFDE4FB80023EBD312C973635A6C76F /* BranchRedeemRewardsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchRedeemRewardsRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchRedeemRewardsRequest.h"; sourceTree = "<group>"; };
-		9E6CFD8CE7A60DF129D8654A3042D184 /* BNCLinkData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCLinkData.m; path = "Branch-SDK/Branch-SDK/BNCLinkData.m"; sourceTree = "<group>"; };
-		9E82A4E4DF39D480DBF08CF22F5D990B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		9F325559E3777CA386E0FF9F67A8C082 /* BNCSystemObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCSystemObserver.h; path = "Branch-SDK/Branch-SDK/BNCSystemObserver.h"; sourceTree = "<group>"; };
-		A1E87E65BCF8A9D4C855B8D8A5B79E3C /* BNCServerInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCServerInterface.m; path = "Branch-SDK/Branch-SDK/BNCServerInterface.m"; sourceTree = "<group>"; };
-		A24D8F5DC9DB77713A4DAAFCBECBA815 /* BranchCreditHistoryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchCreditHistoryRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchCreditHistoryRequest.m"; sourceTree = "<group>"; };
-		A2877D67DA4E00BF373D621CBB5A1774 /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A534CCD48EA225A83B2F95FBAE736F4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB1BEDC89FFEC36D0376FF332CFEEF8B /* FDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FDataSnapshot.h; sourceTree = "<group>"; };
-		ABEDE2D5C90FBA694252B6C947749CC8 /* BranchLoadActionsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchLoadActionsRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchLoadActionsRequest.m"; sourceTree = "<group>"; };
-		AC66ED42FBC9402959B92A0D88FC2357 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		AF5540FABBCECBBAD2D6B8BDBD35C7AA /* BranchSpotlightUrlRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchSpotlightUrlRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchSpotlightUrlRequest.m"; sourceTree = "<group>"; };
-		B0B00C821719E5C61A065DDFA90054EA /* BranchLinkProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchLinkProperties.m; path = "Branch-SDK/Branch-SDK/BranchLinkProperties.m"; sourceTree = "<group>"; };
-		B0F7794561547878E118ACD8D5DCF651 /* BranchApplyPromoCodeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchApplyPromoCodeRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchApplyPromoCodeRequest.h"; sourceTree = "<group>"; };
-		B13E184460480141BE6AD41207963A21 /* BranchShortUrlRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchShortUrlRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchShortUrlRequest.m"; sourceTree = "<group>"; };
-		B1C29BEF11FC4A37B12F974EC43B6836 /* Tune.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tune.framework; sourceTree = "<group>"; };
-		B2171A62B9901F50CE5277ED5717D23C /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
-		B2C86FCEB3A38B80125A60C04D8B45AD /* BranchConnectDebugRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchConnectDebugRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchConnectDebugRequest.m"; sourceTree = "<group>"; };
-		B4B1283D246E81E58D6308907021B067 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
-		B8B3375922C00BA3D33B29F9F759C71B /* BNCContentDiscoveryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCContentDiscoveryManager.h; path = "Branch-SDK/Branch-SDK/BNCContentDiscoveryManager.h"; sourceTree = "<group>"; };
-		B9B6D862AB19CFA8FDB4A9B67FADA554 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD7913D0F3873AA12CFF7B74C3B3F0CF /* BranchDeepLinkingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchDeepLinkingController.h; path = "Branch-SDK/Branch-SDK/BranchDeepLinkingController.h"; sourceTree = "<group>"; };
-		C1027082F9F09020692AE832BCBADF7C /* BNCLinkData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCLinkData.h; path = "Branch-SDK/Branch-SDK/BNCLinkData.h"; sourceTree = "<group>"; };
-		C12B17D3C0AC17490E10575E55AF8D60 /* Firebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Firebase.modulemap; sourceTree = "<group>"; };
-		C3643D1B4B9B22022D9A927947732B6A /* Firebase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Firebase.xcconfig; sourceTree = "<group>"; };
-		C3C7244EF0F17628C0A0B22F66E6C2B2 /* Pods-isDogHereApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-isDogHereApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		C5837E801B0249B364774E71921CCF6C /* Pods-isDogHereApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-isDogHereApp.modulemap"; sourceTree = "<group>"; };
-		C7633B860EC6481F19DEC0690B811E91 /* BranchSetIdentityRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchSetIdentityRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchSetIdentityRequest.m"; sourceTree = "<group>"; };
-		C8C476AA9307DBCF095C1BC0BAB54F01 /* Pods-isDogHereApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-isDogHereApp-resources.sh"; sourceTree = "<group>"; };
-		C9D869962594FE91B39C859457E3D424 /* BNCServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCServerResponse.h; path = "Branch-SDK/Branch-SDK/BNCServerResponse.h"; sourceTree = "<group>"; };
-		CAF3461331C31223F4FB5FA5C12F0F56 /* BranchShortUrlSyncRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchShortUrlSyncRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchShortUrlSyncRequest.h"; sourceTree = "<group>"; };
-		CB3F7EB74ACC2234BF5AC121C889177A /* BranchInstallRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchInstallRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchInstallRequest.h"; sourceTree = "<group>"; };
-		CDA6AEDE68B4949729C435A5CA746AF4 /* BNCStrongMatchHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCStrongMatchHelper.m; path = "Branch-SDK/Branch-SDK/BNCStrongMatchHelper.m"; sourceTree = "<group>"; };
-		CE87598E8BE7DFF34A6985D46EF780B0 /* BranchInstallRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchInstallRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchInstallRequest.m"; sourceTree = "<group>"; };
-		CEC36D5DCE581DF517BFB17B865810D5 /* Firebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-umbrella.h"; sourceTree = "<group>"; };
-		CF192D10114A19BA2918E4CA5503E087 /* Firebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-prefix.pch"; sourceTree = "<group>"; };
-		CF1D8FF34BB039F1CC3C881E13FBF098 /* Pods-isDogHereApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-isDogHereApp.release.xcconfig"; sourceTree = "<group>"; };
-		CFE40EBD30538DE449539F9524D02AF0 /* BranchValidatePromoCodeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchValidatePromoCodeRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchValidatePromoCodeRequest.h"; sourceTree = "<group>"; };
-		D1494CD642517C42C62FEBE8015E2C96 /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
-		D1B44745A77D0ED1F15C55A10437029E /* BranchRegisterViewRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchRegisterViewRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchRegisterViewRequest.h"; sourceTree = "<group>"; };
-		D1F799530E85317087D5B31243A57A68 /* BranchOpenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchOpenRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchOpenRequest.h"; sourceTree = "<group>"; };
-		D3A6B22B6DE62F6CFC9E84524E2514A1 /* Branch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Branch.modulemap; sourceTree = "<group>"; };
-		D4A199977D18075AF61165D3639BF644 /* BranchRegisterViewRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchRegisterViewRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchRegisterViewRequest.m"; sourceTree = "<group>"; };
-		D4AE19F51183D8A725B84DE429D4AE0B /* BranchValidatePromoCodeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchValidatePromoCodeRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchValidatePromoCodeRequest.m"; sourceTree = "<group>"; };
-		D5139DAED7C462D4EF1EFB8F5B8CFC73 /* BNCEncodingUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCEncodingUtils.m; path = "Branch-SDK/Branch-SDK/BNCEncodingUtils.m"; sourceTree = "<group>"; };
-		D63973E18C98BE4FADA65B9CA9114D85 /* BNCServerRequestQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCServerRequestQueue.m; path = "Branch-SDK/Branch-SDK/BNCServerRequestQueue.m"; sourceTree = "<group>"; };
-		D6EE1BDD5924FAFC7E4D489068FE72E1 /* BranchActivityItemProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchActivityItemProvider.m; path = "Branch-SDK/Branch-SDK/BranchActivityItemProvider.m"; sourceTree = "<group>"; };
-		D737E798AE6E0CD07819EF41C380B35D /* libFirebaseStatic.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libFirebaseStatic.a; sourceTree = "<group>"; };
-		D903AC9EEAFC23B2CF2F816217387D92 /* BranchLogoutRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchLogoutRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchLogoutRequest.h"; sourceTree = "<group>"; };
-		DDBBCDCA9DBB4E0066335B29A6157272 /* BranchRedeemRewardsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchRedeemRewardsRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchRedeemRewardsRequest.m"; sourceTree = "<group>"; };
-		E0EA7F1594507E95741181194D8FB437 /* BNCError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCError.m; path = "Branch-SDK/Branch-SDK/BNCError.m"; sourceTree = "<group>"; };
-		E542811645C4F1B35389411FEA3238FE /* BranchApplyPromoCodeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchApplyPromoCodeRequest.m; path = "Branch-SDK/Branch-SDK/Requests/BranchApplyPromoCodeRequest.m"; sourceTree = "<group>"; };
-		E5D76C7A298AE75A2FF8F998A4EF2E0D /* FAuthType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthType.h; sourceTree = "<group>"; };
-		E6570AB53C441935DEF83D412DADF303 /* Branch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Branch-prefix.pch"; sourceTree = "<group>"; };
-		EEA29F4BC25EB0DC279A6A821641E982 /* BNCServerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BNCServerInterface.h; path = "Branch-SDK/Branch-SDK/BNCServerInterface.h"; sourceTree = "<group>"; };
-		F2E226FD4A6E5075BEB65DD493876F3C /* FirebaseApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseApp.h; sourceTree = "<group>"; };
-		F580BBFF8B3A6E0DFA74F63C1F9BB68C /* BranchLoadActionsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchLoadActionsRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchLoadActionsRequest.h"; sourceTree = "<group>"; };
-		F66163F3A5A5052B93A883F3E6876139 /* BranchConnectDebugRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BranchConnectDebugRequest.h; path = "Branch-SDK/Branch-SDK/Requests/BranchConnectDebugRequest.h"; sourceTree = "<group>"; };
-		FA26D426DC771273C40B9EB26920EBF9 /* Firebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Firebase-dummy.m"; sourceTree = "<group>"; };
-		FA331421487ACF74EC514CB5D122333A /* BNCContentDiscoveryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BNCContentDiscoveryManager.m; path = "Branch-SDK/Branch-SDK/BNCContentDiscoveryManager.m"; sourceTree = "<group>"; };
-		FDB75A40C1402043A921235589A3F415 /* BranchConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BranchConstants.m; path = "Branch-SDK/Branch-SDK/BranchConstants.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		193492DAB21F2BA7FE1783436D79611F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFDF5ED63A32FC49001AC526A4414F3B /* AdSupport.framework in Frameworks */,
-				6A5CB9DF43BDD2713F2B51BE9A1E4526 /* CoreTelephony.framework in Frameworks */,
-				D40C1C3EE910314BB4244066BB22C157 /* Foundation.framework in Frameworks */,
-				C383B13708A978399C1A93ABCB9384F7 /* MobileCoreServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		436AAB5D832AA2C014900A15A4D74643 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0D9E919C51610672FB2CBF22FE23DB3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7E10F383DCD59079712A57B50DCF88E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */,
-				4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */,
-				1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */,
-				E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		139B8D630959FD4B2997F622C3C4E766 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D3A6B22B6DE62F6CFC9E84524E2514A1 /* Branch.modulemap */,
-				62C64105005427684D535DEC4BF9A679 /* Branch.xcconfig */,
-				8383A3EA4C23AF4E33FBB7952911EF83 /* Branch-dummy.m */,
-				E6570AB53C441935DEF83D412DADF303 /* Branch-prefix.pch */,
-				6C4CDAB37A68590D08365BBDB83E6FD5 /* Branch-umbrella.h */,
-				896845691299761486660C1FD8EB35D1 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Branch";
-			sourceTree = "<group>";
-		};
-		1C1D4F136790D2EF1E72D381B8E11FED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				570959D51CBFCC1DE26D032DA47D3825 /* Branch.framework */,
-				A2877D67DA4E00BF373D621CBB5A1774 /* Firebase.framework */,
-				6DFC7CB4E131195C9B94F99555913E68 /* Pods_isDogHereApp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1F4DD650AD2E89EF8C232A2A016E7D4D /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				B9B6D862AB19CFA8FDB4A9B67FADA554 /* Empty.m */,
-				070A0CA8E4CEE5D55A0053E40114B45D /* FAuthData.h */,
-				E5D76C7A298AE75A2FF8F998A4EF2E0D /* FAuthType.h */,
-				732AC67B8CE844918BA49014BC094FC4 /* FConfig.h */,
-				AB1BEDC89FFEC36D0376FF332CFEEF8B /* FDataSnapshot.h */,
-				D1494CD642517C42C62FEBE8015E2C96 /* FEventType.h */,
-				B4B1283D246E81E58D6308907021B067 /* Firebase.h */,
-				F2E226FD4A6E5075BEB65DD493876F3C /* FirebaseApp.h */,
-				27EDA12BCB86F71A070F3EF930CE2BA5 /* FirebaseServerValue.h */,
-				B2171A62B9901F50CE5277ED5717D23C /* FMutableData.h */,
-				6B3836DCB33058255C03248645E808A2 /* FQuery.h */,
-				5D943BFF78D7B7ED07CE73724B824B2B /* FTransactionResult.h */,
-				AD45D84900EF80505E2566F204544B59 /* Frameworks */,
-				FE8BFAE99C6A79C8514040BBFD1E63D8 /* Support Files */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		1FC4CAE2C42309C100CFDFA3499EE6D7 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				2F24E3194B3FD53BB26D08B856669509 /* AdSupport.framework */,
-				6ABDEBEC5A5AF26E1457697E8F909FD4 /* CFNetwork.framework */,
-				51BF5299579F9852AD251090D8C7DC7A /* CoreTelephony.framework */,
-				4264AD0BB97B8282B4867C69056E9441 /* Foundation.framework */,
-				AC66ED42FBC9402959B92A0D88FC2357 /* MobileCoreServices.framework */,
-				74F6EED9396822F2E6883611D8577080 /* Security.framework */,
-				9E82A4E4DF39D480DBF08CF22F5D990B /* SystemConfiguration.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4CA07B560A6500D3E9AFF2E837021AFE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B1C29BEF11FC4A37B12F974EC43B6836 /* Tune.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6CE55F5888726367BD60500189D8CDCE /* Tune */ = {
-			isa = PBXGroup;
-			children = (
-				4CA07B560A6500D3E9AFF2E837021AFE /* Frameworks */,
-			);
-			path = Tune;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
-				D8541CF69397D78D4BA09E7454C06C6F /* Pods */,
-				1C1D4F136790D2EF1E72D381B8E11FED /* Products */,
-				8523E89811588CA200A89A5B608C57BA /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8523E89811588CA200A89A5B608C57BA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A651E262A64917D122C769F72785B51C /* Pods-isDogHereApp */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		A651E262A64917D122C769F72785B51C /* Pods-isDogHereApp */ = {
-			isa = PBXGroup;
-			children = (
-				A534CCD48EA225A83B2F95FBAE736F4F /* Info.plist */,
-				C5837E801B0249B364774E71921CCF6C /* Pods-isDogHereApp.modulemap */,
-				06453315B8101F953FE76B4010A3D9D5 /* Pods-isDogHereApp-acknowledgements.markdown */,
-				C3C7244EF0F17628C0A0B22F66E6C2B2 /* Pods-isDogHereApp-acknowledgements.plist */,
-				242E21CB2B1E5A4D7CCA7CB561C935AA /* Pods-isDogHereApp-dummy.m */,
-				534D5EBEC835C6DD078C7386EF9710E4 /* Pods-isDogHereApp-frameworks.sh */,
-				C8C476AA9307DBCF095C1BC0BAB54F01 /* Pods-isDogHereApp-resources.sh */,
-				983B0BC3177A180B77C0C88329706A1A /* Pods-isDogHereApp-umbrella.h */,
-				6C2736BD9C333237F56855056FE98478 /* Pods-isDogHereApp.debug.xcconfig */,
-				CF1D8FF34BB039F1CC3C881E13FBF098 /* Pods-isDogHereApp.release.xcconfig */,
-			);
-			name = "Pods-isDogHereApp";
-			path = "Target Support Files/Pods-isDogHereApp";
-			sourceTree = "<group>";
-		};
-		AD45D84900EF80505E2566F204544B59 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D737E798AE6E0CD07819EF41C380B35D /* libFirebaseStatic.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D8541CF69397D78D4BA09E7454C06C6F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F670097588B9DF50352325821A9473FB /* Branch */,
-				1F4DD650AD2E89EF8C232A2A016E7D4D /* Firebase */,
-				6CE55F5888726367BD60500189D8CDCE /* Tune */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1FC4CAE2C42309C100CFDFA3499EE6D7 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F670097588B9DF50352325821A9473FB /* Branch */ = {
-			isa = PBXGroup;
-			children = (
-				93194A631F8D25E8DB8895468987CEAD /* BNCConfig.h */,
-				B8B3375922C00BA3D33B29F9F759C71B /* BNCContentDiscoveryManager.h */,
-				FA331421487ACF74EC514CB5D122333A /* BNCContentDiscoveryManager.m */,
-				55AC2B98EA775BCFA5C54DF7BDB4C876 /* BNCDebugRequest.h */,
-				68723722BC886DEA2D199689D86C33D6 /* BNCDebugRequest.m */,
-				68F65EBC0FE2B2C43F113B0A5CFB936F /* BNCEncodingUtils.h */,
-				D5139DAED7C462D4EF1EFB8F5B8CFC73 /* BNCEncodingUtils.m */,
-				33838A8517A98E36C95BC31C8E5F2A3E /* BNCError.h */,
-				E0EA7F1594507E95741181194D8FB437 /* BNCError.m */,
-				1F6896DFF13AF3D55753109A7CF67AD9 /* BNCLinkCache.h */,
-				6A56DB830D452D089AEFB6E3480F7321 /* BNCLinkCache.m */,
-				C1027082F9F09020692AE832BCBADF7C /* BNCLinkData.h */,
-				9E6CFD8CE7A60DF129D8654A3042D184 /* BNCLinkData.m */,
-				3BBC2B7534E69A083C5619F894F7895F /* BNCPreferenceHelper.h */,
-				62AB302ED0A7BA62E55A06A19D696208 /* BNCPreferenceHelper.m */,
-				EEA29F4BC25EB0DC279A6A821641E982 /* BNCServerInterface.h */,
-				A1E87E65BCF8A9D4C855B8D8A5B79E3C /* BNCServerInterface.m */,
-				4F988971D97FF68DEE78CE0F74E977EC /* BNCServerRequest.h */,
-				3C774F830EDDF283834A74748139D82C /* BNCServerRequest.m */,
-				33B35A2109F560FC03655915A51CCCE8 /* BNCServerRequestQueue.h */,
-				D63973E18C98BE4FADA65B9CA9114D85 /* BNCServerRequestQueue.m */,
-				C9D869962594FE91B39C859457E3D424 /* BNCServerResponse.h */,
-				2ADD8AAB0A5D0B6C8CB04894AE1EBCE3 /* BNCServerResponse.m */,
-				8734C08F7862DCD1AC843F40521C5B8D /* BNCStrongMatchHelper.h */,
-				CDA6AEDE68B4949729C435A5CA746AF4 /* BNCStrongMatchHelper.m */,
-				9F325559E3777CA386E0FF9F67A8C082 /* BNCSystemObserver.h */,
-				4F1CE0240C1DC31D20F3B46617A5EA2F /* BNCSystemObserver.m */,
-				2371B358C183BB26AB7EF76B9A71F10F /* Branch.h */,
-				711F30DE41442C375B049806B4E38029 /* Branch.m */,
-				6508F77B627A4195FD07D743031F37DE /* BranchActivityItemProvider.h */,
-				D6EE1BDD5924FAFC7E4D489068FE72E1 /* BranchActivityItemProvider.m */,
-				B0F7794561547878E118ACD8D5DCF651 /* BranchApplyPromoCodeRequest.h */,
-				E542811645C4F1B35389411FEA3238FE /* BranchApplyPromoCodeRequest.m */,
-				5D0FE2B092AA3ED47B7E12A9F87272C5 /* BranchCloseRequest.h */,
-				8968CDD943EFDDBFF5609608C7E08F02 /* BranchCloseRequest.m */,
-				F66163F3A5A5052B93A883F3E6876139 /* BranchConnectDebugRequest.h */,
-				B2C86FCEB3A38B80125A60C04D8B45AD /* BranchConnectDebugRequest.m */,
-				2F525E292508B916BD3A731B8BB52B7E /* BranchConstants.h */,
-				FDB75A40C1402043A921235589A3F415 /* BranchConstants.m */,
-				0F8F16E004B73E7F190525733ADEA7A3 /* BranchCreditHistoryRequest.h */,
-				A24D8F5DC9DB77713A4DAAFCBECBA815 /* BranchCreditHistoryRequest.m */,
-				095687E87026CA6C644315DCCDF7D2C2 /* BranchCSSearchableItemAttributeSet.h */,
-				82316191780726CE922B33A1CF4FD6B0 /* BranchCSSearchableItemAttributeSet.m */,
-				BD7913D0F3873AA12CFF7B74C3B3F0CF /* BranchDeepLinkingController.h */,
-				61BF182E24415B70402245B12CEE586A /* BranchDisconnectDebugRequest.h */,
-				83146EB057F4E033261B4C0541D35086 /* BranchDisconnectDebugRequest.m */,
-				0B29B2B5B5B8C6E02FBDFA976645F475 /* BranchGetPromoCodeRequest.h */,
-				8C1EB76B8E1F49C132BDCE25B9B9CD0E /* BranchGetPromoCodeRequest.m */,
-				CB3F7EB74ACC2234BF5AC121C889177A /* BranchInstallRequest.h */,
-				CE87598E8BE7DFF34A6985D46EF780B0 /* BranchInstallRequest.m */,
-				489FF359ED4392C9A05536F132BAE43B /* BranchLinkProperties.h */,
-				B0B00C821719E5C61A065DDFA90054EA /* BranchLinkProperties.m */,
-				F580BBFF8B3A6E0DFA74F63C1F9BB68C /* BranchLoadActionsRequest.h */,
-				ABEDE2D5C90FBA694252B6C947749CC8 /* BranchLoadActionsRequest.m */,
-				22627054CAF6A6F6C01744B9F6434CD0 /* BranchLoadRewardsRequest.h */,
-				920B59B96F4AAB809456A0544659F696 /* BranchLoadRewardsRequest.m */,
-				D903AC9EEAFC23B2CF2F816217387D92 /* BranchLogoutRequest.h */,
-				15DFA68E8A17BF258A82C5326A53A50F /* BranchLogoutRequest.m */,
-				0A951A68C6FE3901ED628F8355F4F76E /* BranchLogRequest.h */,
-				4EDB37E40C432CE9207A904B2E45100A /* BranchLogRequest.m */,
-				D1F799530E85317087D5B31243A57A68 /* BranchOpenRequest.h */,
-				76843C9B67370E9705A7F397D875764A /* BranchOpenRequest.m */,
-				9BFDE4FB80023EBD312C973635A6C76F /* BranchRedeemRewardsRequest.h */,
-				DDBBCDCA9DBB4E0066335B29A6157272 /* BranchRedeemRewardsRequest.m */,
-				D1B44745A77D0ED1F15C55A10437029E /* BranchRegisterViewRequest.h */,
-				D4A199977D18075AF61165D3639BF644 /* BranchRegisterViewRequest.m */,
-				734EA8C03A54E2219810E6CDA78D34F1 /* BranchSetIdentityRequest.h */,
-				C7633B860EC6481F19DEC0690B811E91 /* BranchSetIdentityRequest.m */,
-				6B97A79F399678139DB80F9BF05FC115 /* BranchShortUrlRequest.h */,
-				B13E184460480141BE6AD41207963A21 /* BranchShortUrlRequest.m */,
-				CAF3461331C31223F4FB5FA5C12F0F56 /* BranchShortUrlSyncRequest.h */,
-				7BF5FD7BD79D0281B22CE602178862D5 /* BranchShortUrlSyncRequest.m */,
-				089DA162FB2AD7C3AEFC77C51E4565F8 /* BranchSpotlightUrlRequest.h */,
-				AF5540FABBCECBBAD2D6B8BDBD35C7AA /* BranchSpotlightUrlRequest.m */,
-				4197A3E7F97A795EE4750DC62AD57969 /* BranchUniversalObject.h */,
-				69430D26B69278877DEF52B6E3F2B501 /* BranchUniversalObject.m */,
-				4143E5B82DAC1B33BD0AF8D80CD8B75C /* BranchUserCompletedActionRequest.h */,
-				7A82E399EDDE8EF8F9FF47B3354DE4A2 /* BranchUserCompletedActionRequest.m */,
-				CFE40EBD30538DE449539F9524D02AF0 /* BranchValidatePromoCodeRequest.h */,
-				D4AE19F51183D8A725B84DE429D4AE0B /* BranchValidatePromoCodeRequest.m */,
-				139B8D630959FD4B2997F622C3C4E766 /* Support Files */,
-			);
-			path = Branch;
-			sourceTree = "<group>";
-		};
-		FE8BFAE99C6A79C8514040BBFD1E63D8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C12B17D3C0AC17490E10575E55AF8D60 /* Firebase.modulemap */,
-				C3643D1B4B9B22022D9A927947732B6A /* Firebase.xcconfig */,
-				FA26D426DC771273C40B9EB26920EBF9 /* Firebase-dummy.m */,
-				CF192D10114A19BA2918E4CA5503E087 /* Firebase-prefix.pch */,
-				CEC36D5DCE581DF517BFB17B865810D5 /* Firebase-umbrella.h */,
-				4C3EBF9910C0D7EB46D3FC1EEB8203CD /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Firebase";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */,
-				1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */,
-				E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */,
-				E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */,
-				239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */,
-				60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */,
-				1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */,
-				2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */,
-				6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */,
-				DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */,
-				4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */,
-				191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A2653AA1F2176A09085F179228B7550 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04499BF78ADBD3412A703D40F2B06251 /* Pods-isDogHereApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0EDFD6760FBCC0C9F61562B209038DF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFA7200B7E3BDCCFFF5323144156B070 /* BNCConfig.h in Headers */,
-				639F8D43A80C337D90A6918AED292B4F /* BNCContentDiscoveryManager.h in Headers */,
-				F866E86AAAF5E91862482EE4EFCC91B1 /* BNCDebugRequest.h in Headers */,
-				8DECB5D4787941125587C7BEE7F6A9BD /* BNCEncodingUtils.h in Headers */,
-				76DA1A7AFCC3D2AF24CC9F37C3AFDE5E /* BNCError.h in Headers */,
-				95F2E69E47751FD4BA183EC8393499A8 /* BNCLinkCache.h in Headers */,
-				BB6C8C8DE5667ED05B599F950581AEA7 /* BNCLinkData.h in Headers */,
-				5B07AB2E9BC2942F246C406A16F0D244 /* BNCPreferenceHelper.h in Headers */,
-				532AA2F8CEDE746EDD338A54FB0A552A /* BNCServerInterface.h in Headers */,
-				0F95DB4FB5EAD6B0452FD69EFD83468A /* BNCServerRequest.h in Headers */,
-				A901B85375D2383157079FBED8501A34 /* BNCServerRequestQueue.h in Headers */,
-				7AD0B6DFF141CB176C4176D73E132075 /* BNCServerResponse.h in Headers */,
-				1A644280CE3219EF1E8394B9E04954F7 /* BNCStrongMatchHelper.h in Headers */,
-				75D7D943B0761D21184D2D8C5B7D34FD /* BNCSystemObserver.h in Headers */,
-				5C9C2AEC39788509ADABEB21CD59AEA8 /* Branch-umbrella.h in Headers */,
-				C83741BE6E02A36BDED3A40E86AC3861 /* Branch.h in Headers */,
-				52D83DF458DD6F475B5BF6D9FB515222 /* BranchActivityItemProvider.h in Headers */,
-				3325314A43863546DCDCC23CAA30252F /* BranchApplyPromoCodeRequest.h in Headers */,
-				BF859203B0A0F166330CD2FAA63C68CB /* BranchCloseRequest.h in Headers */,
-				6658B7FA507085801BD56F800B12901B /* BranchConnectDebugRequest.h in Headers */,
-				A1FFF7EB48ECC1F4780B98AA30C4C8B5 /* BranchConstants.h in Headers */,
-				A184B619A4C9165E64B4A3D4CDCC02C5 /* BranchCreditHistoryRequest.h in Headers */,
-				EA0F2FF74062BDF82E27A05E86E509CA /* BranchCSSearchableItemAttributeSet.h in Headers */,
-				7B5152C5C137C163397545D0EA13040E /* BranchDeepLinkingController.h in Headers */,
-				6E2E8ACC2C96F9BD2DE508DA46B234E7 /* BranchDisconnectDebugRequest.h in Headers */,
-				B5D759D0519388FF1EF2BBCD6F925C88 /* BranchGetPromoCodeRequest.h in Headers */,
-				E7A8B8844A0F65981EC39BD2FAB90343 /* BranchInstallRequest.h in Headers */,
-				941C3C0046AFDB59FDF277B73E1492D3 /* BranchLinkProperties.h in Headers */,
-				33824544ECEE9C16B3D59240DE253CD2 /* BranchLoadActionsRequest.h in Headers */,
-				6DC600C68AC2FB5F6273AAD535264474 /* BranchLoadRewardsRequest.h in Headers */,
-				63F9CBD3E279DCFAC2225F7B606A43C1 /* BranchLogoutRequest.h in Headers */,
-				668A0781FAE18020D1D29760147569FC /* BranchLogRequest.h in Headers */,
-				AC5386D74C788A27CBA09DC96C2347FB /* BranchOpenRequest.h in Headers */,
-				31C57927393AE7BA5DEC71C699A0368A /* BranchRedeemRewardsRequest.h in Headers */,
-				9A26F2D89187D06122629A79F638325D /* BranchRegisterViewRequest.h in Headers */,
-				9A79E27CED94495F2FB3E93BE72DDC91 /* BranchSetIdentityRequest.h in Headers */,
-				05EEF9DAE1647E2813897D10D68D8E0D /* BranchShortUrlRequest.h in Headers */,
-				056E0741CE61B9BBF86B2564508F687E /* BranchShortUrlSyncRequest.h in Headers */,
-				55F497A5D6305C63B2A12F8E7AC52382 /* BranchSpotlightUrlRequest.h in Headers */,
-				BA23D6A7B20A98C6B2C67CA56BD06517 /* BranchUniversalObject.h in Headers */,
-				5277A00E8456E4070D8174485C492B44 /* BranchUserCompletedActionRequest.h in Headers */,
-				AF3209B17EB62864F9641FA17572D9B6 /* BranchValidatePromoCodeRequest.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		70D0A64A8618A200157DF626F00D26BD /* Branch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A462A7C0AAB939A1424978F71DADAACC /* Build configuration list for PBXNativeTarget "Branch" */;
-			buildPhases = (
-				86B9EED9521BE0E2EC079ABCE68AA103 /* Sources */,
-				193492DAB21F2BA7FE1783436D79611F /* Frameworks */,
-				F0EDFD6760FBCC0C9F61562B209038DF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Branch;
-			productName = Branch;
-			productReference = 570959D51CBFCC1DE26D032DA47D3825 /* Branch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B7AC9326D819482593FE118E915409D7 /* Firebase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */;
-			buildPhases = (
-				46E052D320E3B778B76D8393E0BAFE0F /* Sources */,
-				A7E10F383DCD59079712A57B50DCF88E /* Frameworks */,
-				2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Firebase;
-			productName = Firebase;
-			productReference = A2877D67DA4E00BF373D621CBB5A1774 /* Firebase.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C0E355135091D97A7EA0694AAC253922 /* Pods-isDogHereApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DF8AB39E9CF62F7878EF65BCA713830 /* Build configuration list for PBXNativeTarget "Pods-isDogHereApp" */;
-			buildPhases = (
-				2E24A17CD833DE520D86F51951286296 /* Sources */,
-				436AAB5D832AA2C014900A15A4D74643 /* Frameworks */,
-				4A2653AA1F2176A09085F179228B7550 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D85039DCEB3520024AA1EDC74B3D3107 /* PBXTargetDependency */,
-				111F96DFFFF3E2CBC25C82B1D2FFC494 /* PBXTargetDependency */,
-			);
-			name = "Pods-isDogHereApp";
-			productName = "Pods-isDogHereApp";
-			productReference = 6DFC7CB4E131195C9B94F99555913E68 /* Pods_isDogHereApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1C1D4F136790D2EF1E72D381B8E11FED /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				70D0A64A8618A200157DF626F00D26BD /* Branch */,
-				B7AC9326D819482593FE118E915409D7 /* Firebase */,
-				C0E355135091D97A7EA0694AAC253922 /* Pods-isDogHereApp */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2E24A17CD833DE520D86F51951286296 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7E44CE979DBF2D9C384A65A97F41239 /* Pods-isDogHereApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46E052D320E3B778B76D8393E0BAFE0F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */,
-				1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86B9EED9521BE0E2EC079ABCE68AA103 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				837432E001C639CAEB59C1B082C1059B /* BNCContentDiscoveryManager.m in Sources */,
-				C3CBF4A8DC8418E35D95D92118F40D30 /* BNCDebugRequest.m in Sources */,
-				3B420B23D8D876E5EDFEF1ABF1DCE907 /* BNCEncodingUtils.m in Sources */,
-				4CA6203A8F22CAB1ECE7DD8F8B9D28EB /* BNCError.m in Sources */,
-				E5C49B3CCECE26E83D456F4EB5172AA5 /* BNCLinkCache.m in Sources */,
-				89F5ED9C80DE247748C0F0CF9F63C61E /* BNCLinkData.m in Sources */,
-				D2F2EB75303CDE71DF49803047C39BB2 /* BNCPreferenceHelper.m in Sources */,
-				65D3192BDA75EB0E9816BD989782D65D /* BNCServerInterface.m in Sources */,
-				5AC6494E6A48EC51C0FF6F5CCE62E682 /* BNCServerRequest.m in Sources */,
-				1932412131C8BE0853392C23AD9CA7C2 /* BNCServerRequestQueue.m in Sources */,
-				E9DB7E16743626C8064B64EC3E8F8D93 /* BNCServerResponse.m in Sources */,
-				E44F4E2476519C59DC50CCFC7DCEA1E2 /* BNCStrongMatchHelper.m in Sources */,
-				DD99EF019E9E4FA9029FE7268EC98F67 /* BNCSystemObserver.m in Sources */,
-				748E65D892792515942B30A936046F86 /* Branch-dummy.m in Sources */,
-				7DD9CC26C93F3078C96EE72542E6C90C /* Branch.m in Sources */,
-				2D5AA01D837C595E5B9079AD8C6FC2FE /* BranchActivityItemProvider.m in Sources */,
-				588DB180657362895DEB198FAB1BEF4B /* BranchApplyPromoCodeRequest.m in Sources */,
-				AD83A9F17A02B6B3258B1458560920C7 /* BranchCloseRequest.m in Sources */,
-				0B18AFF21E0C4F5B4C6D0517097CA45D /* BranchConnectDebugRequest.m in Sources */,
-				B0B23BEB9351FEE2A7D72A5163CBDCEC /* BranchConstants.m in Sources */,
-				36C0A846F782E1DF020E8E9DCE973F63 /* BranchCreditHistoryRequest.m in Sources */,
-				8DCACBE450AA5122BAE9E1B2D47705A7 /* BranchCSSearchableItemAttributeSet.m in Sources */,
-				1AFA137130ABF93A44C681541F3BFBFB /* BranchDisconnectDebugRequest.m in Sources */,
-				9E9A48AC835A613EC3B96DFBEBB67F7B /* BranchGetPromoCodeRequest.m in Sources */,
-				656F32B46BD7419B89D58CC3E46D3CD6 /* BranchInstallRequest.m in Sources */,
-				0E7F27F9C4E76816D6DDDC470591F753 /* BranchLinkProperties.m in Sources */,
-				5496CDD5F4A8653281B4790A8EFE1655 /* BranchLoadActionsRequest.m in Sources */,
-				186E5019720FF3D050A3043310207A60 /* BranchLoadRewardsRequest.m in Sources */,
-				034D6A1D347B1DA340332AE03912E165 /* BranchLogoutRequest.m in Sources */,
-				99FD8C991F16B0D03E00858713159D79 /* BranchLogRequest.m in Sources */,
-				88AFCA14F253A090410DD64D0C52845A /* BranchOpenRequest.m in Sources */,
-				4773412E78DC40760BA6331DF93790B1 /* BranchRedeemRewardsRequest.m in Sources */,
-				057F086A4BA7D095C8B6EA8A2CFD1BCC /* BranchRegisterViewRequest.m in Sources */,
-				F77E034EA71E903857C7DF2678BEAB9D /* BranchSetIdentityRequest.m in Sources */,
-				9776CF59D7B5669AF7DC2765E8403AA7 /* BranchShortUrlRequest.m in Sources */,
-				B5248431A90073001BD999927746A8DA /* BranchShortUrlSyncRequest.m in Sources */,
-				830D9EB98C657E28FD45645697B66A02 /* BranchSpotlightUrlRequest.m in Sources */,
-				37A441F017FE8375CFE1F92F3F93B951 /* BranchUniversalObject.m in Sources */,
-				F420A19DD3C1BE270EBCBA4D713C9B2F /* BranchUserCompletedActionRequest.m in Sources */,
-				39C3904CC7F5F878EC15EE1D31A0B5E0 /* BranchValidatePromoCodeRequest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		111F96DFFFF3E2CBC25C82B1D2FFC494 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Firebase;
-			target = B7AC9326D819482593FE118E915409D7 /* Firebase */;
-			targetProxy = 74322D6F7F4C1790EF8E008A56252FF5 /* PBXContainerItemProxy */;
-		};
-		D85039DCEB3520024AA1EDC74B3D3107 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Branch;
-			target = 70D0A64A8618A200157DF626F00D26BD /* Branch */;
-			targetProxy = 936B64D90CDF54B098E9945067DDBBC7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		22104089EA7FB3BC1DB640445F5D4F89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62C64105005427684D535DEC4BF9A679 /* Branch.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Branch/Branch-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Branch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Branch/Branch.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Branch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36099D3D23BB564DA994D33625C7AE06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3643D1B4B9B22022D9A927947732B6A /* Firebase.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Firebase/Firebase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Firebase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Firebase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		478C63A6CAEF1DEABF4BED585AFB7DD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62C64105005427684D535DEC4BF9A679 /* Branch.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Branch/Branch-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Branch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Branch/Branch.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Branch;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7FDFA2D14AF0575E9B310F2D20A35869 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3643D1B4B9B22022D9A927947732B6A /* Firebase.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Firebase/Firebase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Firebase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Firebase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A52D6DAEB22177628F3476B9F2FD19ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C2736BD9C333237F56855056FE98478 /* Pods-isDogHereApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-isDogHereApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_isDogHereApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B200DF466D81F2F335D9282CACD2764B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1D8FF34BB039F1CC3C881E13FBF098 /* Pods-isDogHereApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-isDogHereApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_isDogHereApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		E43846B588E1892F3093F3B7082B6DFB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		1DF8AB39E9CF62F7878EF65BCA713830 /* Build configuration list for PBXNativeTarget "Pods-isDogHereApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A52D6DAEB22177628F3476B9F2FD19ED /* Debug */,
-				B200DF466D81F2F335D9282CACD2764B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */,
-				E43846B588E1892F3093F3B7082B6DFB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FDFA2D14AF0575E9B310F2D20A35869 /* Debug */,
-				36099D3D23BB564DA994D33625C7AE06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A462A7C0AAB939A1424978F71DADAACC /* Build configuration list for PBXNativeTarget "Branch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22104089EA7FB3BC1DB640445F5D4F89 /* Debug */,
-				478C63A6CAEF1DEABF4BED585AFB7DD1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>003DD14752F120F040226DC2832E5CDF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Firebase.framework</string>
+			<key>path</key>
+			<string>Firebase.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>012A7E018F3D34F159894EBD7EACACF9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07E6AF70ADEBCEB2A3080005133E4316</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>02233FA4AD2C2C723F55B52547701BC3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>CF1D8FF34BB039F1CC3C881E13FBF098</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-isDogHereApp/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_isDogHereApp</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>06453315B8101F953FE76B4010A3D9D5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07E6AF70ADEBCEB2A3080005133E4316</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Empty.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09340B52C9DB876782945E7657F1685F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>07E6AF70ADEBCEB2A3080005133E4316</string>
+				<string>C943CA8BAF3C1F752A9FEB4DB1745025</string>
+				<string>1F5923377A8A90A748C67C0D8F9856BE</string>
+				<string>B271F7D0C5CFBBC0A3B2811CD5B6372A</string>
+				<string>9C5C6921A6B96A787A9E780B192092F2</string>
+				<string>7B69E7D0682A149E7476BB3F4720ED30</string>
+				<string>3B16C4BA43D2412662F742BA1CECB46B</string>
+				<string>E8D3EE5773522F31F7550E851FAC57ED</string>
+				<string>59FCD7B47FABBEE896951F2C76D5E3C6</string>
+				<string>DA8752E62CB2D0BF63D013776F5203BB</string>
+				<string>3053DC796271503BBFC4FFE5903B1922</string>
+				<string>860903FE10F9FC6D2D311E501A522BC0</string>
+				<string>5EDED9C3D5189B07F1171008084F42DF</string>
+				<string>E7A16C7B7525B422D84E3BDE236149A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Firebase</string>
+			<key>path</key>
+			<string>Firebase</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>133084239AFBBF2329281B2113AF84D7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>775F8B46A4D906E32CD82C4F0F83B092</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14B8B9B15ECBE87983FF987239AB2D7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>843A690C4A272ACCFA5202DC4499C74E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>191DE2EB9A35585AE0A88BA9F833A1F4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>860903FE10F9FC6D2D311E501A522BC0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1BDE601748FAB641023D43A958FEF67C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Firebase</string>
+			<key>target</key>
+			<string>B7AC9326D819482593FE118E915409D7</string>
+			<key>targetProxy</key>
+			<string>6A613F7715433284B872646CFBD63702</string>
+		</dict>
+		<key>1C04A7CD5B70C4561F6D98C882731C65</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6204446BD9150A17B12E81B4A6F9CA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1C3EF85CD30E6FF2E51471BD5B3CEB29</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B16C4BA43D2412662F742BA1CECB46B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1D925BB011B04DDED982C7946571A67A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F5923377A8A90A748C67C0D8F9856BE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1D9D7FF5237C8CC91EF58DC45AC274FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5531B578BDD2D963DABFE0B228102B2E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F5923377A8A90A748C67C0D8F9856BE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FAuthType.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21173FF24F03B7D6FD5A1ADC55855FDC</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>60481B48290EC7FB1352030EA16B007A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>133084239AFBBF2329281B2113AF84D7</string>
+				<string>CA9953ED3BB1639EC096DA54F7CF0209</string>
+				<string>E08CF84215ED23D17860E04A83AC84A7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>1BDE601748FAB641023D43A958FEF67C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-isDogHereApp</string>
+			<key>productName</key>
+			<string>Pods-isDogHereApp</string>
+			<key>productReference</key>
+			<string>F6866C6464B960859113C28DC814E123</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>2305962AB5789CED2BC71970C1AD3427</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>239B10F388840841389B7F09648735B1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7B69E7D0682A149E7476BB3F4720ED30</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>242E21CB2B1E5A4D7CCA7CB561C935AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C37DDA60882AD124C2BCA7F8AC7E867</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Firebase.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C074F63C9EE7CB4D8C618390A32CEC35</string>
+				<string>E43846B588E1892F3093F3B7082B6DFB</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F1496011DBBB75777645194AAAFE92D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8D3EE5773522F31F7550E851FAC57ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2FDCAAB615C287D16BF7F1F2AA978246</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C23FCF31260D47CEC1494A292DAA1A1E</string>
+				<string>1D925BB011B04DDED982C7946571A67A</string>
+				<string>E60FA42EEC3ECC48701DB55986D25D69</string>
+				<string>E8B534D15D2B25919ACD898217266891</string>
+				<string>239B10F388840841389B7F09648735B1</string>
+				<string>60F9139BDD38565B78214C4FC5F5729D</string>
+				<string>1C3EF85CD30E6FF2E51471BD5B3CEB29</string>
+				<string>2F1496011DBBB75777645194AAAFE92D</string>
+				<string>6646DA26298257396C7FFE141BB84CC3</string>
+				<string>DB05A9DD8244D10C28B6915C514AE15F</string>
+				<string>4D75CF0089B20355B17A851513C4A002</string>
+				<string>191DE2EB9A35585AE0A88BA9F833A1F4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3053DC796271503BBFC4FFE5903B1922</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>31C811C22581E493F39BB393930792D7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>Tune.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>36099D3D23BB564DA994D33625C7AE06</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2C37DDA60882AD124C2BCA7F8AC7E867</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Firebase/Firebase-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Firebase/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Firebase/Firebase.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Firebase</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B16C4BA43D2412662F742BA1CECB46B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Firebase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3FE7FE3F44CB2052746D9C8AFEDA0309</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libFirebaseStatic.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>46E052D320E3B778B76D8393E0BAFE0F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>012A7E018F3D34F159894EBD7EACACF9</string>
+				<string>1D9D7FF5237C8CC91EF58DC45AC274FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>49B346C14D532324DCD14D0FA1347BC6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7FDFA2D14AF0575E9B310F2D20A35869</string>
+				<string>36099D3D23BB564DA994D33625C7AE06</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4B0EFAAA29109D9A705A27EFFA10FAE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>77C49D928448B31FB9A7D5AE5C8D6C4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D75CF0089B20355B17A851513C4A002</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3053DC796271503BBFC4FFE5903B1922</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>534D5EBEC835C6DD078C7386EF9710E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5531B578BDD2D963DABFE0B228102B2E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Firebase-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>59FCD7B47FABBEE896951F2C76D5E3C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FirebaseServerValue.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AD634EE67D59CB92CBCA832339B2369</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Firebase-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5EACB2DA1996A211697DD29F4E539E1B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>31C811C22581E493F39BB393930792D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5EDED9C3D5189B07F1171008084F42DF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3FE7FE3F44CB2052746D9C8AFEDA0309</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60481B48290EC7FB1352030EA16B007A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7C83DEBE36B07AE36C9A9A6CEAFB3F7F</string>
+				<string>02233FA4AD2C2C723F55B52547701BC3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>60F85758B54CB0D843A3E97DFFB2F21F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>60F9139BDD38565B78214C4FC5F5729D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AD634EE67D59CB92CBCA832339B2369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6166BE40C18BC6BF0EED92CAB212EC33</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>639F2004060A80BE77D0FCFD42EF9C77</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>003DD14752F120F040226DC2832E5CDF</string>
+				<string>F6866C6464B960859113C28DC814E123</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6646DA26298257396C7FFE141BB84CC3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>59FCD7B47FABBEE896951F2C76D5E3C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6A613F7715433284B872646CFBD63702</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B7AC9326D819482593FE118E915409D7</string>
+			<key>remoteInfo</key>
+			<string>Firebase</string>
+		</dict>
+		<key>6C2736BD9C333237F56855056FE98478</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73ACF24FCC9B46D7B86C42421F8C820C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5EACB2DA1996A211697DD29F4E539E1B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Tune</string>
+			<key>path</key>
+			<string>Tune</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>775F8B46A4D906E32CD82C4F0F83B092</key>
+		<dict>
+			<key>fileRef</key>
+			<string>242E21CB2B1E5A4D7CCA7CB561C935AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>77C49D928448B31FB9A7D5AE5C8D6C4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7B69E7D0682A149E7476BB3F4720ED30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FEventType.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C83DEBE36B07AE36C9A9A6CEAFB3F7F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6C2736BD9C333237F56855056FE98478</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-isDogHereApp/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_isDogHereApp</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>14B8B9B15ECBE87983FF987239AB2D7B</string>
+				<string>DFAD0EBD022ED41B2BBD644697ED3B55</string>
+				<string>639F2004060A80BE77D0FCFD42EF9C77</string>
+				<string>8523E89811588CA200A89A5B608C57BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FDFA2D14AF0575E9B310F2D20A35869</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2C37DDA60882AD124C2BCA7F8AC7E867</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Firebase/Firebase-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Firebase/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Firebase/Firebase.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Firebase</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>843A690C4A272ACCFA5202DC4499C74E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>60F85758B54CB0D843A3E97DFFB2F21F</string>
+				<string>77C49D928448B31FB9A7D5AE5C8D6C4E</string>
+				<string>C6204446BD9150A17B12E81B4A6F9CA8</string>
+				<string>6166BE40C18BC6BF0EED92CAB212EC33</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8523E89811588CA200A89A5B608C57BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A651E262A64917D122C769F72785B51C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>860903FE10F9FC6D2D311E501A522BC0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FTransactionResult.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86A0CCDC32E87C059C55C61631F67EB1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Firebase.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BFBEF1E80040124294C6EA61A246C31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>77C49D928448B31FB9A7D5AE5C8D6C4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>983B0BC3177A180B77C0C88329706A1A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C5C6921A6B96A787A9E780B192092F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FDataSnapshot.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A534CCD48EA225A83B2F95FBAE736F4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A651E262A64917D122C769F72785B51C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A534CCD48EA225A83B2F95FBAE736F4F</string>
+				<string>C5837E801B0249B364774E71921CCF6C</string>
+				<string>06453315B8101F953FE76B4010A3D9D5</string>
+				<string>C3C7244EF0F17628C0A0B22F66E6C2B2</string>
+				<string>242E21CB2B1E5A4D7CCA7CB561C935AA</string>
+				<string>534D5EBEC835C6DD078C7386EF9710E4</string>
+				<string>C8C476AA9307DBCF095C1BC0BAB54F01</string>
+				<string>983B0BC3177A180B77C0C88329706A1A</string>
+				<string>6C2736BD9C333237F56855056FE98478</string>
+				<string>CF1D8FF34BB039F1CC3C881E13FBF098</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-isDogHereApp</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-isDogHereApp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7E10F383DCD59079712A57B50DCF88E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E3FBB5B462A14E8ACC9B340227DE4BE1</string>
+				<string>4B0EFAAA29109D9A705A27EFFA10FAE2</string>
+				<string>1C04A7CD5B70C4561F6D98C882731C65</string>
+				<string>E1A883FEBDEED9B85D90D6BE2080F218</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B271F7D0C5CFBBC0A3B2811CD5B6372A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FConfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>49B346C14D532324DCD14D0FA1347BC6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>46E052D320E3B778B76D8393E0BAFE0F</string>
+				<string>A7E10F383DCD59079712A57B50DCF88E</string>
+				<string>2FDCAAB615C287D16BF7F1F2AA978246</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Firebase</string>
+			<key>productName</key>
+			<string>Firebase</string>
+			<key>productReference</key>
+			<string>003DD14752F120F040226DC2832E5CDF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>C074F63C9EE7CB4D8C618390A32CEC35</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C23FCF31260D47CEC1494A292DAA1A1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C943CA8BAF3C1F752A9FEB4DB1745025</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C3C7244EF0F17628C0A0B22F66E6C2B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5837E801B0249B364774E71921CCF6C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6204446BD9150A17B12E81B4A6F9CA8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Security.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C8C476AA9307DBCF095C1BC0BAB54F01</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C943CA8BAF3C1F752A9FEB4DB1745025</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FAuthData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA9953ED3BB1639EC096DA54F7CF0209</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8BFBEF1E80040124294C6EA61A246C31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CF1D8FF34BB039F1CC3C881E13FBF098</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-isDogHereApp.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D29FC1BBE676651AB888FF771BAA248B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Firebase-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>639F2004060A80BE77D0FCFD42EF9C77</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B7AC9326D819482593FE118E915409D7</string>
+				<string>21173FF24F03B7D6FD5A1ADC55855FDC</string>
+			</array>
+		</dict>
+		<key>DA8752E62CB2D0BF63D013776F5203BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMutableData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB05A9DD8244D10C28B6915C514AE15F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA8752E62CB2D0BF63D013776F5203BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DFAD0EBD022ED41B2BBD644697ED3B55</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09340B52C9DB876782945E7657F1685F</string>
+				<string>73ACF24FCC9B46D7B86C42421F8C820C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E08CF84215ED23D17860E04A83AC84A7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E53DDB060B5F3E00E1AC4B3EE5E12554</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E1A883FEBDEED9B85D90D6BE2080F218</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6166BE40C18BC6BF0EED92CAB212EC33</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E3FBB5B462A14E8ACC9B340227DE4BE1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>60F85758B54CB0D843A3E97DFFB2F21F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43846B588E1892F3093F3B7082B6DFB</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E53DDB060B5F3E00E1AC4B3EE5E12554</key>
+		<dict>
+			<key>fileRef</key>
+			<string>983B0BC3177A180B77C0C88329706A1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E60FA42EEC3ECC48701DB55986D25D69</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B271F7D0C5CFBBC0A3B2811CD5B6372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E7A16C7B7525B422D84E3BDE236149A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>86A0CCDC32E87C059C55C61631F67EB1</string>
+				<string>2C37DDA60882AD124C2BCA7F8AC7E867</string>
+				<string>5531B578BDD2D963DABFE0B228102B2E</string>
+				<string>D29FC1BBE676651AB888FF771BAA248B</string>
+				<string>5AD634EE67D59CB92CBCA832339B2369</string>
+				<string>2305962AB5789CED2BC71970C1AD3427</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Firebase</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8B534D15D2B25919ACD898217266891</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C5C6921A6B96A787A9E780B192092F2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E8D3EE5773522F31F7550E851FAC57ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FirebaseApp.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6866C6464B960859113C28DC814E123</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_isDogHereApp.framework</string>
+			<key>path</key>
+			<string>Pods_isDogHereApp.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>
