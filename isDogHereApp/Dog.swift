@@ -13,7 +13,7 @@ import Firebase
 struct Dog {
     let dogName: String
     let owner: String
-    let image: UIImage
+    let image: UIImage?
     let location: String
     let isHere: Bool?
     let ownerEmail: String
@@ -33,10 +33,27 @@ struct Dog {
         owner = snapshot.value["Owner"] as! String
         isHere = snapshot.value["IsHere"] as? Bool
         let imageData = snapshot.value["ImageURL"] as! String
-        // HTTP data, used workaround to NSAppTransportSecurity
-        image = UIImage(data: NSData(contentsOfURL: NSURL(string: imageData)!)!)!
         location = snapshot.value["Location"] as! String
         ownerEmail = snapshot.value["OwnerEmail"] as! String
+        // HTTP data, used workaround to NSAppTransportSecurity
+        guard let contentOfURL = NSURL(string: imageData) else {
+            image = nil
+            print("NSURL unable to find resource, setting image to nil")
+            return
+        }
+        guard let data =  NSData(contentsOfURL: contentOfURL) else {
+            image = nil
+            print("NSData unable to process contentOfURL, setting image to nil")
+            return
+        }
+        guard let imageFromURL = UIImage(data: data) else {
+            image = nil
+            print("UIImage unable to convert data into image, check the URL. Setting image to nil")
+            return
+        }
+        
+        image = imageFromURL
+        
     }
     
 }
