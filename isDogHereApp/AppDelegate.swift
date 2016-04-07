@@ -20,10 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        // MARK - Push Notifications
-        let settings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
+        // MARK - App Push Notifications
+        // let settings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
+        // UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        // UIApplication.sharedApplication().registerForRemoteNotifications()
         
         // MARK: Tune Init Code
         Tune.initializeWithTuneAdvertiserId("190479", tuneConversionKey: "0f85edd57ece8c5e51d14e5f630ee607")
@@ -32,11 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MARK: AppBoy Init code
         Appboy.startWithApiKey("4b202f9d-6f24-4d1d-83d3-32d379f19190", inApplication:application, withLaunchOptions:launchOptions)
         
+        // MARK: AppBoy Push notifications
+        let setting = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(setting)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
         return true
     }
 
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         print("Device token: \(deviceToken)")
+        Appboy.sharedInstance()!.registerPushToken("\(deviceToken)")
     }
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
@@ -70,10 +76,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         
         Tune.measureSession()
+        
+        // Badge clearing
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        // MARK: Appboy Push Open Tracking
+        Appboy.sharedInstance()!.registerApplication(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler)
     }
 
 

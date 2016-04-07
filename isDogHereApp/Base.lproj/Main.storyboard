@@ -50,7 +50,7 @@
                         </prototypes>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Tune Dog" id="YoK-vl-7xd"/>
+                    <navigationItem key="navigationItem" title="Tune Dawg" id="YoK-vl-7xd"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
