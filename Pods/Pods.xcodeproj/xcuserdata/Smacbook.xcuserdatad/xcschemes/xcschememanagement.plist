@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Appboy-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,15 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21173FF24F03B7D6FD5A1ADC55855FDC</key>
+		<key>26D70F2E579D206930B56CDE499673DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFA8C9F3728CD8DD0CC9E4E2E2DAAE31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE1A6193DA056A64AB86F6B3EE59432D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

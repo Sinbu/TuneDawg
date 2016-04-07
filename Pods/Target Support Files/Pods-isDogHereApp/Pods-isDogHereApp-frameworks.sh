@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-isDogHereApp/Appboy_iOS_SDK.framework"
   install_framework "Pods-isDogHereApp/Firebase.framework"
+  install_framework "Pods-isDogHereApp/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-isDogHereApp/Appboy_iOS_SDK.framework"
   install_framework "Pods-isDogHereApp/Firebase.framework"
+  install_framework "Pods-isDogHereApp/SDWebImage.framework"
 fi

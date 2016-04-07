@@ -49,6 +49,7 @@
 		4DABCE741C0984C100D19AE1 /* isDogHereAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isDogHereAppUITests.swift; sourceTree = "<group>"; };
 		4DABCE761C0984C100D19AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DECF76A1C0E124C009D40AE /* DogTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogTableCell.swift; sourceTree = "<group>"; };
+		4DFC7AC21CB61ED700A1088C /* isDogHereApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "isDogHereApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		722EE136488D09958967419C /* Pods-isDogHereApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isDogHereApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.debug.xcconfig"; sourceTree = "<group>"; };
 		78D21392AF0C1C0F9FD77EDE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E00A1129774752EF1C9951C7 /* Pods-isDogHereApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isDogHereApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-isDogHereApp/Pods-isDogHereApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 				4DABCE631C0984C100D19AE1 /* Main.storyboard */,
 				4DABCE661C0984C100D19AE1 /* Assets.xcassets */,
 				4DABCE681C0984C100D19AE1 /* LaunchScreen.storyboard */,
+				4DFC7AC21CB61ED700A1088C /* isDogHereApp-Bridging-Header.h */,
 				27ADF3F21C1A0F3F009A952F /* TuneConfiguration.plist */,
 				4DABCE6B1C0984C100D19AE1 /* Info.plist */,
 			);
@@ -442,9 +444,10 @@
 				);
 				INFOPLIST_FILE = isDogHereApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDawg;
 				PRODUCT_NAME = "Tune Dog";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "isDogHereApp/isDogHereApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -461,9 +464,10 @@
 				);
 				INFOPLIST_FILE = isDogHereApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDawg;
 				PRODUCT_NAME = "Tune Dog";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "isDogHereApp/isDogHereApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

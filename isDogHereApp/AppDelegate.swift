@@ -9,6 +9,7 @@
 import UIKit
 import Tune
 import AdSupport
+import Appboy_iOS_SDK // This shouldn't be necessary, but it solves the problem of bridging failing
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MARK: Tune Init Code
         Tune.initializeWithTuneAdvertiserId("190479", tuneConversionKey: "0f85edd57ece8c5e51d14e5f630ee607")
         Tune.automateIapEventMeasurement(true)
+        
+        // MARK: AppBoy Init code
+        Appboy.startWithApiKey("YOUR-API-KEY", inApplication:application, withLaunchOptions:launchOptions)
         
         return true
     }
