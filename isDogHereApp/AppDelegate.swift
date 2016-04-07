@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Tune.automateIapEventMeasurement(true)
         
         // MARK: AppBoy Init code
-        Appboy.startWithApiKey("YOUR-API-KEY", inApplication:application, withLaunchOptions:launchOptions)
+        Appboy.startWithApiKey("4b202f9d-6f24-4d1d-83d3-32d379f19190", inApplication:application, withLaunchOptions:launchOptions)
         
         return true
     }
