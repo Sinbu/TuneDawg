@@ -65,11 +65,13 @@ class DogDetailsViewController: UIViewController {
         if (sender.on) {
             print("Notifications turned on for: \(dogDetail.dogName)")
             dogSubscriptions.append(String(dogDetail.dogID))
+            Appboy.sharedInstance()!.user.setCustomAttributeWithKey("Dog-\(dogDetail.dogID)", andStringValue: String(dogDetail.dogID))
             
             
         } else {
             print("Notifications off for: \(dogDetail.dogName)")
             dogSubscriptions = dogSubscriptions.filter {$0 != String(dogDetail.dogID)}
+            Appboy.sharedInstance()!.user.unsetCustomAttributeWithKey(String(dogDetail.dogID))
         }
         let stringDogSubscriptions = dogSubscriptions.joinWithSeparator(",")
         
