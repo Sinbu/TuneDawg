@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MARK: Tune Init Code
         Tune.initializeWithTuneAdvertiserId("190479", tuneConversionKey: "0f85edd57ece8c5e51d14e5f630ee607")
-        Tune.automateIapEventMeasurement(true)
+        Tune.registerCustomProfileString("DogSubscription")
         
         // MARK: AppBoy Init code
         Appboy.startWithApiKey("4b202f9d-6f24-4d1d-83d3-32d379f19190", inApplication:application, withLaunchOptions:launchOptions)

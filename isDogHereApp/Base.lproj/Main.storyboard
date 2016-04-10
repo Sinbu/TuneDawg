@@ -82,14 +82,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BA2-Ch-Tgu">
+                                <rect key="frame" x="151" y="311" width="75" height="31"/>
+                                <connections>
+                                    <action selector="notificationSwitchAction:" destination="MwA-Ao-pRb" eventType="valueChanged" id="V1a-bp-reS"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MUJ-vY-MIa" firstAttribute="top" secondItem="lO8-mu-NNU" secondAttribute="bottom" constant="51" id="KwY-hf-f26"/>
                             <constraint firstItem="GIQ-Ol-Crj" firstAttribute="leading" secondItem="vpD-1T-qyS" secondAttribute="leadingMargin" constant="90" id="L2P-3P-Nkf"/>
+                            <constraint firstItem="BA2-Ch-Tgu" firstAttribute="leading" secondItem="vpD-1T-qyS" secondAttribute="leadingMargin" constant="135" id="M7y-Pn-eT5"/>
                             <constraint firstItem="GIQ-Ol-Crj" firstAttribute="top" secondItem="MUJ-vY-MIa" secondAttribute="bottom" constant="26" id="Pdn-J0-KGK"/>
                             <constraint firstItem="MUJ-vY-MIa" firstAttribute="leading" secondItem="vpD-1T-qyS" secondAttribute="leadingMargin" constant="103" id="THc-UE-zHp"/>
+                            <constraint firstItem="BA2-Ch-Tgu" firstAttribute="top" secondItem="GIQ-Ol-Crj" secondAttribute="bottom" constant="13.5" id="doe-s7-aSF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MUJ-vY-MIa" secondAttribute="trailing" constant="104" id="lqr-le-OKE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BA2-Ch-Tgu" secondAttribute="trailing" constant="135" id="zN2-kr-F3h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GIQ-Ol-Crj" secondAttribute="trailing" constant="90" id="znx-kK-Xji"/>
                         </constraints>
                     </view>
@@ -99,6 +108,7 @@
                     <connections>
                         <outlet property="dogDetailImage" destination="MUJ-vY-MIa" id="vo6-wc-9f5"/>
                         <outlet property="dogDetailNav" destination="c4r-bh-q5G" id="8f0-dK-5BO"/>
+                        <outlet property="dogNotificationSwitch" destination="BA2-Ch-Tgu" id="Azu-Ts-xFM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhf-CU-FEi" userLabel="First Responder" sceneMemberID="firstResponder"/>

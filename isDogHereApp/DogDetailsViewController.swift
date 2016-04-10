@@ -9,16 +9,18 @@
 import Foundation
 import UIKit
 import Tune
+import Appboy_iOS_SDK
 
 class DogDetailsViewController: UIViewController {
     @IBOutlet weak var dogDetailImage: UIImageView!
     @IBOutlet weak var dogDetailNav: UINavigationItem!
+    @IBOutlet var dogNotificationSwitch: UISwitch!
     
-    var banner: TuneBanner = TuneBanner()
-    var interstitial = TuneInterstitial()
-    var shouldShowAd: Bool = true
     
+    let banner: TuneBanner = TuneBanner()
+    let interstitial = TuneInterstitial()
     var dogDetail: Dog!
+    var dogSubscriptions: Array<String>!
     
     
     override func viewDidLoad() {
@@ -32,8 +34,46 @@ class DogDetailsViewController: UIViewController {
         
         dogDetailImage.image = dogDetail.image
         
+        // IAM setting dog subscriptions
+        // TODO: Move this to an option on NSUserDefaults
+        let dogSubscriptionsOptional: String? = Tune.getCustomProfileString("DogSubscription")
+        if let dogSubscriptionStringList = dogSubscriptionsOptional {
+            // Parse comma seperated string into array
+            dogSubscriptions = dogSubscriptionStringList.characters.split{$0 == ","}.map(String.init)
+            print("Dog Subscription list: \(dogSubscriptions)")
+        } else {
+            print("Dog Subscription not set")
+            dogSubscriptions = [String]()
+        }
+        
+        if (dogSubscriptions.contains(String(dogDetail.dogID))) {
+            print("Subscribed to this dog")
+            dogNotificationSwitch.setOn(true, animated: false)
+        } else {
+            print("Not subscribed to this dog")
+            dogNotificationSwitch.setOn(false, animated: false)
+        }
+        
+//        Appboy.sharedInstance()!.user.setCustomAttributeWithKey("Dog-\(dogDetail.dogName)", andBOOLValue: true)
+//        Appboy.sharedInstance()!.user.unsetCustomAttributeWithKey("Dog-\(dogDetail.dogName)")
+        
         // self.showInterstitialAd()
         
+    }
+    @IBAction func notificationSwitchAction(sender: UISwitch) {
+        
+        if (sender.on) {
+            print("Notifications turned on for: \(dogDetail.dogName)")
+            dogSubscriptions.append(String(dogDetail.dogID))
+            
+            
+        } else {
+            print("Notifications off for: \(dogDetail.dogName)")
+            dogSubscriptions = dogSubscriptions.filter {$0 != String(dogDetail.dogID)}
+        }
+        let stringDogSubscriptions = dogSubscriptions.joinWithSeparator(",")
+        
+        Tune.setCustomProfileStringValue(stringDogSubscriptions, forVariable: "DogSubscription")
     }
     
 //    override func viewDidLayoutSubviews() {

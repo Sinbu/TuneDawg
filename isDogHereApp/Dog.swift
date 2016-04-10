@@ -9,16 +9,18 @@
 import Foundation
 import UIKit
 import Firebase
+import Tune
 
 struct Dog {
     let dogName: String
     let owner: String
+    let dogID: Int
     let image: UIImage?
     let location: String
     let isHere: Bool?
     let ownerEmail: String
     
-    init(dogName: String, owner: String, location: String, base64Image: String, isHere: Bool, ownerEmail: String) {
+    init(dogName: String, dogID: Int, owner: String, location: String, base64Image: String, isHere: Bool, ownerEmail: String, dogSubscriptions: Array<String>) {
         self.dogName = dogName
         self.owner = owner
         self.location = location
@@ -26,15 +28,18 @@ struct Dog {
         self.image = UIImage(data: imageData!)!
         self.isHere = isHere
         self.ownerEmail = ownerEmail
+        self.dogID = dogID
     }
     
     init(snapshot: FDataSnapshot) {
         dogName = snapshot.key
+        dogID = snapshot.value["ID"] as! Int
         owner = snapshot.value["Owner"] as! String
         isHere = snapshot.value["IsHere"] as? Bool
         let imageData = snapshot.value["ImageURL"] as! String
         location = snapshot.value["Location"] as! String
         ownerEmail = snapshot.value["OwnerEmail"] as! String
+        
         // HTTP data, used workaround to NSAppTransportSecurity
         guard let contentOfURL = NSURL(string: imageData) else {
             image = nil
