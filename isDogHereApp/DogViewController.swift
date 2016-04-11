@@ -13,15 +13,16 @@ class DogViewController: UITableViewController {
     var ref: Firebase!
     var handleForData: UInt!
     var items = [Dog]()
-
+    @IBOutlet var tableLoadingIndicator: UIActivityIndicatorView!
     
     // MARK: View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Firebase(url: "https://tunedog.firebaseio.com/Dogs")
+        tableLoadingIndicator.startAnimating()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         handleForData = ref.observeEventType(.Value, withBlock: { snapshot in
             var newItems = [Dog]()
             
@@ -32,6 +33,7 @@ class DogViewController: UITableViewController {
             
             self.items = newItems
             self.tableView.reloadData()
+            self.tableLoadingIndicator.stopAnimating()
             
             }, withCancelBlock: { error in
                 print(error.description)

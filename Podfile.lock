@@ -5,7 +5,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - Tune (4.0.3)
+  - Tune (4.1.0)
 
 DEPENDENCIES:
   - Appboy-iOS-SDK (~> 2.19)
@@ -16,6 +16,6 @@ SPEC CHECKSUMS:
   Appboy-iOS-SDK: b36df0bce312ed9f6dcc9d8bb978f36e7edac765
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  Tune: 99d0dd09742a6f76376c0e302426f13a51ce92b5
+  Tune: 5f57aa437d29fd9a94f83283457c1f867cf4cec1
 
 COCOAPODS: 0.39.0

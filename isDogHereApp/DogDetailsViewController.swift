@@ -36,6 +36,7 @@ class DogDetailsViewController: UIViewController {
         
         // IAM setting dog subscriptions
         // TODO: Move this to an option on NSUserDefaults
+        
         let dogSubscriptionsOptional: String? = Tune.getCustomProfileString("DogSubscription")
         if let dogSubscriptionStringList = dogSubscriptionsOptional {
             // Parse comma seperated string into array
@@ -53,11 +54,7 @@ class DogDetailsViewController: UIViewController {
             print("Not subscribed to this dog")
             dogNotificationSwitch.setOn(false, animated: false)
         }
-        
-//        Appboy.sharedInstance()!.user.setCustomAttributeWithKey("Dog-\(dogDetail.dogName)", andBOOLValue: true)
-//        Appboy.sharedInstance()!.user.unsetCustomAttributeWithKey("Dog-\(dogDetail.dogName)")
-        
-        // self.showInterstitialAd()
+ 
         
     }
     @IBAction func notificationSwitchAction(sender: UISwitch) {
@@ -65,7 +62,7 @@ class DogDetailsViewController: UIViewController {
         if (sender.on) {
             print("Notifications turned on for: \(dogDetail.dogName)")
             dogSubscriptions.append(String(dogDetail.dogID))
-            Appboy.sharedInstance()!.user.setCustomAttributeWithKey("Dog-\(dogDetail.dogID)", andStringValue: String(dogDetail.dogID))
+            Appboy.sharedInstance()!.user.setCustomAttributeWithKey("Dog-\(dogDetail.dogID)", andStringValue: String(dogDetail.dogName))
             
             
         } else {

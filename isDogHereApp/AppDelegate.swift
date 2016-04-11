@@ -9,6 +9,7 @@
 import UIKit
 import Tune
 import AdSupport
+import Firebase
 import Appboy_iOS_SDK // This shouldn't be necessary, but it solves the problem of bridging failing
 
 @UIApplicationMain
@@ -36,6 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let setting = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(setting)
         UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+        Firebase.defaultConfig().persistenceEnabled = true
         
         return true
     }
