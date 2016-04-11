@@ -18,11 +18,8 @@ class DogViewController: UITableViewController {
     // MARK: View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewdidload")
         ref = Firebase(url: "https://tunedog.firebaseio.com/Dogs")
-        tableLoadingIndicator.startAnimating()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
         handleForData = ref.observeEventType(.Value, withBlock: { snapshot in
             var newItems = [Dog]()
             
@@ -30,7 +27,6 @@ class DogViewController: UITableViewController {
                 let dogItem = Dog(snapshot: item as! FDataSnapshot)
                 newItems.append(dogItem)
             }
-            
             self.items = newItems
             self.tableView.reloadData()
             self.tableLoadingIndicator.stopAnimating()
@@ -38,11 +34,35 @@ class DogViewController: UITableViewController {
             }, withCancelBlock: { error in
                 print(error.description)
         })
+        tableLoadingIndicator.startAnimating()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        // This is how firebase wants you to do it, but it freezes when reloading data.  Moved this to
+        // the viewLoad function for performance, which i think is ok since thats the whole
+        // purpose of this app.  As a result, the app will be constantly updating data
+        /*
+        handleForData = ref.observeEventType(.Value, withBlock: { snapshot in
+            var newItems = [Dog]()
+            
+            for item in snapshot.children {
+                let dogItem = Dog(snapshot: item as! FDataSnapshot)
+                newItems.append(dogItem)
+            }
+            self.items = newItems
+            self.tableView.reloadData()
+            self.tableLoadingIndicator.stopAnimating()
+            
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+        */
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        ref.removeObserverWithHandle(handleForData)
+        // To be used with "ViewDidAppear.  See note there
+        // ref.removeObserverWithHandle(handleForData)
     }
     
     override func didReceiveMemoryWarning() {
@@ -170,7 +190,6 @@ class DogViewController: UITableViewController {
     // MARK: Segue
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
         let senderIsTableviewCell:Bool! = sender?.isKindOfClass(UITableViewCell)
         
         if (senderIsTableviewCell != nil) {
@@ -178,12 +197,8 @@ class DogViewController: UITableViewController {
             let nextSegway = (segue.destinationViewController as! DogDetailsViewController)
             nextSegway.dogDetail = items[path.row]
         }
-        
+    
     }
-
-    
-    
-
 
 }
 
