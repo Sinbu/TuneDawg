@@ -68,7 +68,7 @@ class DogDetailsViewController: UIViewController {
         } else {
             print("Notifications off for: \(dogDetail.dogName)")
             dogSubscriptions = dogSubscriptions.filter {$0 != String(dogDetail.dogID)}
-            Appboy.sharedInstance()!.user.unsetCustomAttributeWithKey(String(dogDetail.dogID))
+            Appboy.sharedInstance()!.user.unsetCustomAttributeWithKey("Dog-\(String(dogDetail.dogID))")
         }
         let stringDogSubscriptions = dogSubscriptions.joinWithSeparator(",")
         
