@@ -18,7 +18,6 @@ class DogViewController: UITableViewController {
     // MARK: View Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewdidload")
         ref = Firebase(url: "https://tunedog.firebaseio.com/Dogs")
         handleForData = ref.observeEventType(.Value, withBlock: { snapshot in
             var newItems = [Dog]()

@@ -436,8 +436,8 @@
 			baseConfigurationReference = 722EE136488D09958967419C /* Pods-isDogHereApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sina Yeganeh (NAY935FMUS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sina Yeganeh (NAY935FMUS)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -459,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
 				PRODUCT_NAME = "Tune Dog";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a49e28da-cc75-40de-b91c-62f69486f30c";
 				SWIFT_OBJC_BRIDGING_HEADER = "isDogHereApp/isDogHereApp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -469,8 +469,8 @@
 			baseConfigurationReference = E00A1129774752EF1C9951C7 /* Pods-isDogHereApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sina Yeganeh (6C6LAHKF8X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sina Yeganeh (6C6LAHKF8X)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -492,7 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
 				PRODUCT_NAME = "Tune Dog";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "66cca892-7c13-48e7-ade7-52c441dabba1";
 				SWIFT_OBJC_BRIDGING_HEADER = "isDogHereApp/isDogHereApp-Bridging-Header.h";
 			};
 			name = Release;
