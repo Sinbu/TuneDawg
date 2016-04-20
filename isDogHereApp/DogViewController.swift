@@ -106,85 +106,86 @@ class DogViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         }
-    
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        
-        // If no status, show both buttons.  If here, only show not here.  If not here, only show here
-        
-        let currentDog = items[indexPath.row]
-        
-        if (currentDog.isHere == true) {
-            let editAction = UITableViewRowAction(style: .Normal, title: "Not Here") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
-                //TODO: edit the row at indexPath here
-                
-                self.ref.childByAppendingPath(currentDog.dogName)
-                    .childByAppendingPath("IsHere")
-                    .setValue(false)
-                
-                self.tableView.setEditing(false, animated: true)
 
-            }
-            
-            editAction.backgroundColor = UIColor.redColor()
-            
-            return [editAction]
-        }
-        else if (currentDog.isHere == false) {
-            let editAction = UITableViewRowAction(style: .Normal, title: "Here") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
-                //TODO: edit the row at indexPath here
-                self.ref.childByAppendingPath(currentDog.dogName)
-                    .childByAppendingPath("IsHere")
-                    .setValue(true)
-                
-                self.tableView.setEditing(false, animated: true)
-            }
-            
-            editAction.backgroundColor = UIColor(red: 0.1, green: 0.8, blue: 0.1, alpha: 1.0)
-            
-            return [editAction]
-        }
-        else {
-            
-            let editAction = UITableViewRowAction(style: .Normal, title: "Is Here!") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
-                //TODO: edit the row at indexPath here
-                
-                
-                
-                self.ref.childByAppendingPath(currentDog.dogName)
-                    .childByAppendingPath("IsHere")
-                    .setValue(true)
-                
-                self.tableView.setEditing(false, animated: true)
-                
-                
-            }
-            editAction.backgroundColor = UIColor(red: 0.1, green: 0.8, blue: 0.1, alpha: 1.0)
-            
-            
-            let editAction2 = UITableViewRowAction(style: .Normal, title: "Not Here") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
-                //TODO: edit the row at indexPath here
-                
-                self.ref.childByAppendingPath(currentDog.dogName)
-                    .childByAppendingPath("IsHere")
-                    .setValue(false)
-                
-                tableView.setEditing(false, animated: true)
-            }
-            editAction2.backgroundColor = UIColor.redColor()
-            
-            return [editAction, editAction2]
-        }
-        
-    }
+// MARK: Editing the Table to select whether dog is here or not
+//    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        return true
+//    }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        // Do stuff
-        print(editingStyle)
-    }
+//    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+//        
+//        // If no status, show both buttons.  If here, only show not here.  If not here, only show here
+//        
+//        let currentDog = items[indexPath.row]
+//        
+//        if (currentDog.isHere == true) {
+//            let editAction = UITableViewRowAction(style: .Normal, title: "Not Here") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
+//                //TODO: edit the row at indexPath here
+//                
+//                self.ref.childByAppendingPath(currentDog.dogName)
+//                    .childByAppendingPath("IsHere")
+//                    .setValue(false)
+//                
+//                self.tableView.setEditing(false, animated: true)
+//
+//            }
+//            
+//            editAction.backgroundColor = UIColor.redColor()
+//            
+//            return [editAction]
+//        }
+//        else if (currentDog.isHere == false) {
+//            let editAction = UITableViewRowAction(style: .Normal, title: "Here") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
+//                //TODO: edit the row at indexPath here
+//                self.ref.childByAppendingPath(currentDog.dogName)
+//                    .childByAppendingPath("IsHere")
+//                    .setValue(true)
+//                
+//                self.tableView.setEditing(false, animated: true)
+//            }
+//            
+//            editAction.backgroundColor = UIColor(red: 0.1, green: 0.8, blue: 0.1, alpha: 1.0)
+//            
+//            return [editAction]
+//        }
+//        else {
+//            
+//            let editAction = UITableViewRowAction(style: .Normal, title: "Is Here!") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
+//                //TODO: edit the row at indexPath here
+//                
+//                
+//                
+//                self.ref.childByAppendingPath(currentDog.dogName)
+//                    .childByAppendingPath("IsHere")
+//                    .setValue(true)
+//                
+//                self.tableView.setEditing(false, animated: true)
+//                
+//                
+//            }
+//            editAction.backgroundColor = UIColor(red: 0.1, green: 0.8, blue: 0.1, alpha: 1.0)
+//            
+//            
+//            let editAction2 = UITableViewRowAction(style: .Normal, title: "Not Here") { (rowAction:UITableViewRowAction, indexPath:NSIndexPath) -> Void in
+//                //TODO: edit the row at indexPath here
+//                
+//                self.ref.childByAppendingPath(currentDog.dogName)
+//                    .childByAppendingPath("IsHere")
+//                    .setValue(false)
+//                
+//                tableView.setEditing(false, animated: true)
+//            }
+//            editAction2.backgroundColor = UIColor.redColor()
+//            
+//            return [editAction, editAction2]
+//        }
+//        
+//    }
+//    
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        // Do stuff
+//        print(editingStyle)
+//    }
     
     // MARK: Segue
 

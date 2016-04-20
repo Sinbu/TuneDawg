@@ -17,8 +17,6 @@ class DogDetailsViewController: UIViewController {
     @IBOutlet var dogNotificationSwitch: UISwitch!
     
     
-    let banner: TuneBanner = TuneBanner()
-    let interstitial = TuneInterstitial()
     var dogDetail: Dog!
     var dogSubscriptions: Array<String>!
     
