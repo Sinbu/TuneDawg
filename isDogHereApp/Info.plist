@@ -23,9 +23,13 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>snigsoft.tunedog</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>TuneDog</string>
+				<string>tunedog</string>
 			</array>
 		</dict>
 	</array>

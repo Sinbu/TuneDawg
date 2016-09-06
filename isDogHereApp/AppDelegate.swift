@@ -42,6 +42,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        // Universal link entry point
+        
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+            let url = userActivity.webpageURL,
+            let components = NSURLComponents(URL: url, resolvingAgainstBaseURL: true),
+            let path = components.path else {
+                return false
+        }
+        
+        print("Universal link happening! On path: %s", path)
+        return false
+    }
 
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         print("Device token: \(deviceToken)")
