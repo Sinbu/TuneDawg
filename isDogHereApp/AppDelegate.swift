@@ -54,7 +54,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         print("Universal link happening! On path: %s", path)
-        return false
+        
+        return true
     }
 
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {

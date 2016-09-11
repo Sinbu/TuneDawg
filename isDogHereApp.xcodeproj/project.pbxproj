@@ -38,6 +38,7 @@
 		4D0B1C6C1C10217F00C581DE /* Pods_isDogHereApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_isDogHereApp.framework; path = "Pods/../build/Debug-iphoneos/Pods_isDogHereApp.framework"; sourceTree = "<group>"; };
 		4D4777F31C0D71890025B932 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		4D4777F51C0D98060025B932 /* DogDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogDetailsViewController.swift; sourceTree = "<group>"; };
+		4D8462151D853E05008B3121 /* Tune Dog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tune Dog.entitlements"; sourceTree = "<group>"; };
 		4DABCE5C1C0984C100D19AE1 /* Tune Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tune Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DABCE5F1C0984C100D19AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DABCE611C0984C100D19AE1 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		4DABCE5E1C0984C100D19AE1 /* isDogHereApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D8462151D853E05008B3121 /* Tune Dog.entitlements */,
 				4DABCE5F1C0984C100D19AE1 /* AppDelegate.swift */,
 				4DABCE611C0984C100D19AE1 /* DogViewController.swift */,
 				4D4777F51C0D98060025B932 /* DogDetailsViewController.swift */,
@@ -201,6 +203,9 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 						};
@@ -436,8 +441,9 @@
 			baseConfigurationReference = 722EE136488D09958967419C /* Pods-isDogHereApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Sina Yeganeh (NAY935FMUS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sina Yeganeh (NAY935FMUS)";
+				CODE_SIGN_ENTITLEMENTS = "isDogHereApp/Tune Dog.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -459,7 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
 				PRODUCT_NAME = "Tune Dog";
-				PROVISIONING_PROFILE = "a49e28da-cc75-40de-b91c-62f69486f30c";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "isDogHereApp/isDogHereApp-Bridging-Header.h";
 			};
 			name = Debug;
@@ -469,8 +475,9 @@
 			baseConfigurationReference = E00A1129774752EF1C9951C7 /* Pods-isDogHereApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sina Yeganeh (6C6LAHKF8X)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sina Yeganeh (6C6LAHKF8X)";
+				CODE_SIGN_ENTITLEMENTS = "isDogHereApp/Tune Dog.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -492,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Snigsoft.TuneDogApp;
 				PRODUCT_NAME = "Tune Dog";
-				PROVISIONING_PROFILE = "66cca892-7c13-48e7-ade7-52c441dabba1";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "isDogHereApp/isDogHereApp-Bridging-Header.h";
 			};
 			name = Release;
