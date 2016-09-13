@@ -17,6 +17,7 @@
 		4DABCE671C0984C100D19AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DABCE661C0984C100D19AE1 /* Assets.xcassets */; };
 		4DABCE6A1C0984C100D19AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DABCE681C0984C100D19AE1 /* LaunchScreen.storyboard */; };
 		4DABCE751C0984C100D19AE1 /* isDogHereAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DABCE741C0984C100D19AE1 /* isDogHereAppUITests.swift */; };
+		4DC0B0AD1D85C1A0004D65B5 /* Tune Dog.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 4D8462151D853E05008B3121 /* Tune Dog.entitlements */; };
 		4DECF76B1C0E124C009D40AE /* DogTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DECF76A1C0E124C009D40AE /* DogTableCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -242,6 +243,7 @@
 			files = (
 				4DABCE6A1C0984C100D19AE1 /* LaunchScreen.storyboard in Resources */,
 				27ADF3F31C1A0F3F009A952F /* TuneConfiguration.plist in Resources */,
+				4DC0B0AD1D85C1A0004D65B5 /* Tune Dog.entitlements in Resources */,
 				4DABCE671C0984C100D19AE1 /* Assets.xcassets in Resources */,
 				4DABCE651C0984C100D19AE1 /* Main.storyboard in Resources */,
 			);

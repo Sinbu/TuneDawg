@@ -5,6 +5,7 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:190479.tlnk.io</string>
+		<string>applinks:190479.engine.mobileapptracking.com</string>
 	</array>
 </dict>
 </plist>

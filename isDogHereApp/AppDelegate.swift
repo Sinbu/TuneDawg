@@ -53,7 +53,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return false
         }
         
-        print("Universal link happening! On path: %s", path)
+        Tune.applicationDidOpenURL(url.absoluteString, sourceApplication: nil)
+        
+        print("Universal link happening! On path: \(path)")
         
         return true
     }
